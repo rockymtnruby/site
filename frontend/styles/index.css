@@ -7,87 +7,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --body-background: #f2f2f2;
-  --body-color: #444;
-  --heading-color: black;
-  --action-color: #d64045;
-}
-
 body {
-  background: var(--body-background);
-  color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
-  margin: 0 8px;
-  font-size: 108%;
-  line-height: 1.5;
+  font-family: "Inter", sans-serif;
 }
 
-a {
-  color: var(--action-color);
-  text-decoration: underline;
-  text-decoration-color: #ffb088;
+.header-logo {
+  max-height: 60px;
 }
 
-h1 {
-  margin: 1rem 0 3rem;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2.5rem;
-  color: var(--heading-color);
-  line-height: 1.2;
+.sticky {
+  @apply fixed z-[9999] bg-white bg-opacity-80 transition;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-body > header {
-  margin: 1rem;
-  text-align: center;
+.sticky .navbar-logo {
+  @apply py-2;
 }
 
-body > header img {
-  display: inline-block;
-  width: 400px;
-  max-width: 100%;
+.sticky #navbarToggler span {
+  @apply bg-dark;
 }
 
-body > nav ul {
-  margin: 2rem 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  font-size: 1.3rem;
-  font-weight: bold;
+.sticky #navbarCollapse li a {
+  @apply text-dark hover:text-primary hover:opacity-100;
+}
+#navbarCollapse li .ud-menu-scroll.active {
+  @apply opacity-70;
+}
+.sticky #navbarCollapse li .ud-menu-scroll.active {
+  @apply text-primary opacity-100;
+}
+.sticky .loginBtn {
+  @apply text-dark hover:text-primary hover:opacity-100;
 }
 
-body > nav a {
-  text-decoration: none;
+.sticky .signUpBtn {
+  @apply bg-primary text-white hover:bg-dark hover:text-white;
 }
 
-main {
-  margin: 2rem auto 4rem;
-  max-width: 65rem;
-  min-height: calc(100vh - 200px);
-  padding: 25px 25px 50px;
-  background: white;
-  box-shadow: 2px 3px 3px #ddd;
-  border-radius: 3px;
-
-  @media (max-width: 500px) {
-    padding: 16px 16px 50px;
-  }
+.navbarTogglerActive > span:nth-child(1) {
+  @apply top-[7px] rotate-45 transform;
 }
-
-footer {
-  text-align: center;
-  margin-bottom: 4rem;
-  font-size: 1em;
+.navbarTogglerActive > span:nth-child(2) {
+  @apply opacity-0;
 }
-
-hr {
-  border: none;
-  border-top: 2px dotted #bbb;
-  margin: 3rem 0;
+.navbarTogglerActive > span:nth-child(3) {
+  @apply top-[-8px] rotate-[135deg];
 }
