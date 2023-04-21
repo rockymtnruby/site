@@ -1,0 +1,21 @@
+features:
+  - icon: sparkles
+    title: An Intimate Conference
+    description: >-
+      Engage in meaningful conversations and build strong connections in the Ruby community.
+  - icon: heart
+    title: Community
+    description: >-
+      Join the welcoming Ruby community of Boulder and the Colorado Front
+      Range. No matter your background or skill level, if you love working with Ruby, you’ll belong.
+  - icon: map-pin
+    title: In the Heart of it All
+    description: >-
+      Right in downtown Boulder, a few minutes walk from the famous Pearl Street
+      Mall. Easy access to hiking, biking, and all of the Colorado great outdoors.
+  - icon: cake
+    title: Open Lunch
+    description: >-
+      Lunch will be open. We’ll provide a long break so you can explore
+      Boulder’s amazing food scene. And we'll help you meet new people to enjoy
+      it with.
