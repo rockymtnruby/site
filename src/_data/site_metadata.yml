@@ -14,10 +14,10 @@ main_page:
     - name: hero
       label: Home
       enabled: true
-      navbar: true
+      navbar: false
       slug: home
     - name: features
-      enabled: true
+      enabled: false
     - name: about
       label: About
       navbar: true
@@ -27,7 +27,7 @@ main_page:
     - name: faq
       label: FAQ
       navbar: true
-      enabled: true
+      enabled: false
     - name: testimonials
       enabled: false
     - name: team
@@ -37,4 +37,4 @@ main_page:
     - name: footer
       enabled: false
     - name: back_to_top
-      enabled: true
+      enabled: false
