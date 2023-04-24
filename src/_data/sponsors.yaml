@@ -1,0 +1,5 @@
+- name: Simiarum Infinitarum
+  logo: si-logo.jpg
+  level: platinum
+  url: https://simiaruminfinitarum.com/
+  enabled: false
