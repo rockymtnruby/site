@@ -18,6 +18,10 @@ main_page:
       slug: home
     - name: features
       enabled: true
+    - name: program
+      label: Program
+      navbar: true
+      enabled: false
     - name: about
       label: About
       navbar: true
@@ -29,8 +33,6 @@ main_page:
       navbar: true
       enabled: true
     - name: testimonials
-      enabled: false
-    - name: team
       enabled: false
     - name: contact
       enabled: false
