@@ -56,8 +56,8 @@ body {
   @apply top-[-8px] rotate-[135deg];
 }
 
-.white-icon {
-  stroke: white;
+.primary-icon {
+  stroke: #ac0c0f;
   height: 35px;
   width: 35px;
   stroke-width: 1;
