@@ -22,10 +22,10 @@ main_page:
       label: Program
       navbar: true
       enabled: false
-    - name: about
-      label: About
+    - name: cfp
+      label: CFP
       navbar: true
-      enabled: false
+      enabled: true
     - name: pricing
       enabled: false
     - name: faq
