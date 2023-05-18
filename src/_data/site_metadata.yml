@@ -36,7 +36,5 @@ main_page:
       enabled: false
     - name: contact
       enabled: false
-    - name: footer
-      enabled: true
     - name: back_to_top
       enabled: true
