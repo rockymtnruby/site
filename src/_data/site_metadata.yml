@@ -26,15 +26,15 @@ main_page:
       label: CFP
       navbar: true
       enabled: true
-    - name: pricing
-      enabled: false
+    - name: location
+      enabled: true
     - name: faq
       label: FAQ
       navbar: true
       enabled: true
-    - name: testimonials
+    - name: testimonials # sponsors and/or in the footer?
       enabled: false
-    - name: contact
+    - name: contact # tickets
       enabled: false
     - name: back_to_top
       enabled: true
