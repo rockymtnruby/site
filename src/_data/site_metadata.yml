@@ -14,7 +14,7 @@ main_page:
     - name: hero
       label: Home
       enabled: true
-      navbar: false
+      navbar: true
       slug: home
     - name: features
       enabled: true
@@ -37,4 +37,4 @@ main_page:
     - name: contact # tickets
       enabled: false
     - name: back_to_top
-      enabled: false
+      enabled: true
