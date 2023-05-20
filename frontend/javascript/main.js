@@ -15,9 +15,9 @@
 
     // === logo change
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "images/logo.svg";
+      logo.src = "/images/logo.svg";
     } else {
-      logo.src = "images/logo-white.svg";
+      logo.src = "/images/logo-white.svg";
     }
 
     // show or hide the back-top-top button

@@ -6,5 +6,6 @@
     <body style="height: 100%">
         <%= render Shared::Navbar.new(site: site, metadata: site.metadata, resource: resource) %>
         <%= yield %>
-  </body>
+        <%= render 'footer', metadata: site.metadata %>
+    </body>
 </html>
