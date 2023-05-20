@@ -1,9 +1,25 @@
 questions_and_answers:
-  - q: Where will the conference be held?
-    a: >-
-      We are looking at several venues in downtown Boulder and will be
-      announcing the location soon.
   - q: How many attendees do you expect?
-    a: Our goal is 100-150.
+    a: Our goal is 100-150. The Venue can hold up to 240.
   - q: Are you looking for sponsors?
     a: Yes! Details coming soon.
+  - q: Will the conference talks be recorded?
+    a: >-
+      This is a stretch goal. If we sell enough tickets to cover the cost of
+      recording the talks, we will and the videos will be released online for
+      free.
+  - q: Stretch Goals?
+    a: >-
+      This is an excellent idea from the folks at Blue Ridge Ruby. The financial
+      goal of the conference is simply to not loose money and we have no
+      idea how many people we'll get. The plan is to make it work with a small
+      number of attendees. Our stretch goals include recording the talks,
+      t-shirts, and breakfast burritos.
+  - q: What's the COVID policy?
+    a: >-
+      Based on current CDC guidelines, we will not have a mask or vaccine
+      mandates. However, masks are welcome and vaccination encouraged (science
+      works!). If you are feeling unwell, please do not attend, we will refund
+      your ticket on request.
+  - q: Will there be a job fair?
+    a: "No, but we will have a #jobs channel on our conference Slack group for companies and attendees to share opportunities."
