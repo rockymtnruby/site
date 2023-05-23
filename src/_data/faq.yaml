@@ -2,7 +2,7 @@ questions_and_answers:
   - q: How many attendees do you expect?
     a: Our goal is 100-150. The Venue can hold up to 240.
   - q: Are you looking for sponsors?
-    a: Yes! Details coming soon.
+    a: Yes! Visit our <a href="/sponsorship" class="text-primary hover:text-dark">Sponsorship Page</a>.
   - q: Will the conference talks be recorded?
     a: >-
       This is a stretch goal. If we sell enough tickets to cover the cost of
