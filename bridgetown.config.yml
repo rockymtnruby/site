@@ -32,3 +32,8 @@ template_engine: erb
 # timezone: America/Los_Angeles
 # pagination:
 #   enabled: true
+
+collections:
+  talks:
+    sort_by: speaker.title
+    output: true

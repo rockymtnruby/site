@@ -1,0 +1,205 @@
+- title: Modularizing Rails Monoliths One Bite at a Time
+  description: >-
+    As Rails monoliths grow, coupling becomes increasingly difficult to
+    manage. Many have reached for hope in microservices but instead found higher
+    complexity. The Modular Monolith approach is a proven, lightweight
+    alternative that offers the benefits of enforced boundaries without being
+    cumbersome. This talk proposes a phased approach to refactoring toward this
+    style using the packwerk gem.
+  speaker:
+    name: Marc Reynolds
+    bio: >-
+      Marc is an Engineering Manager at Doximity where he builds software to make doctors’ lives easier. He’s been working in Ruby for more than a decade and loves the beauty and simplicity of the language. When away from his computer, Marc enjoys training in Brazilian Jiu-Jitsu and snowboarding in Taos, New Mexico.
+    photo: marc-reynolds.jpg
+    socials:
+      - link: https://github.com/marcreynolds
+        icon: github
+      - link: https://www.linkedin.com/in/marcreynolds1/
+        icon: linkedin
+- title: Turbo Frames Explored... for Fun and Profit
+  description: >-
+    The ‘new magic’ came at the end of 2020: ✨Hotwire⚡️: Stimulus, Turbo
+    Streams, Strada, Turbo Drive, and Turbo Frames. Each extremely capable and
+    powerful in its own right, but with a wide spread of functions and some
+    overlaps, it can be tough to see what’s what. Let’s explore just one avenue:
+    Turbo Frames. Let’s see what it can _really_ do.
+  speaker:
+    name: Jon Sullivan
+    bio: >-
+      Greetings! I’m Jon. I’ve been in the software world for about ten years
+      and continue to chase performant/efficient code while maximizing
+      readability and (hopefully) minimizing bite-yourself-a-few-years-later
+      code. Balance is everything! While I am a tinkering engineer, electrical
+      enthusiast, digital minimalist, photographer, and reader, I’m looking
+      forward to meeting you, dear reader, and finding out who YOU are! I have a
+      deep love for long, slow conversations and comfy chairs — let’s find some.
+    photo: jon-sullivan.jpg
+    socials:
+      - link: https://jonsully.net
+        icon: blog
+- title: Go Pro with POROs
+  description: >-
+    Plain Old Ruby Objects (POROs) are having a moment. Maybe you’ve heard a
+    whisper in the corner about the jack-of-all trades Service Object, or a
+    glimmering echo of advocacy for non-database-backed domain models? Think
+    you’re using them right? Afraid you’re using them wrong? Then this is the
+    talk for you! We’re going to explore the wonderful world of “convention plus
+    choose-your-own configuration” of Rails codebases and the shining role of
+    POROs (with their ride or dies, the Module). Come hear about the diversity
+    of design patterns out in the wild so you too can confidently tell your
+    coworkers “let’s just use a PORO for that”.
+  speaker:
+    name: Ifat Ribon
+    bio: >-
+      Ifat is a Principal Architect at LaunchPad Lab, a digital product agency
+      headquartered in Chicago. Ifat brings her consulting background to
+      software development, and enjoys collaborating with others to bring new
+      digital products to life. Her coworkers describe her as a “problem-solver
+      to her core,” with the ability to see multiple solutions in real-time, and
+      support her team in executing on technical decisions. Outside of work Ifat
+      is an avid runner, with a fondness for Chicago’s lakeshore path.
+    photo: ifat-ribon.jpg
+    socials:
+      - link: https://github.com/inveterateliterate
+        icon: github
+      - link: https://www.linkedin.com/in/ifatribon/
+        icon: linkedin
+      - link: https://twitter.com/i_ribon9
+        icon: twitter
+- title: Licensing and Distributing a Paid CLI With Ruby, Rails, and SwiftUI
+  description: >-
+    Distributing licenses and enforcing limitations for my "Ruby on Mac" CLI was
+    a super interesting and fun problem to solve. I'll take you on that journey
+    with me, with lessons learned and code samples. You'll learn tactics for
+    thinking through similar problems, and for writing testable code.
+  speaker:
+    name: Moncef Belyamani
+    bio: >-
+      Moncef is the creator of Ruby on Mac: the easiest, fastest, and most reliable way to set up and maintain a proper Ruby dev environment on a Mac. It's the result of helping 100K+ people over the past 11 years, and 100+ hours of research and testing on 4 Macs. Before that, Moncef spent 8 years in Civic Tech working on open source Rails projects that serve millions of people, such as login.gov. He also helped teams save $100K+/year through automating manual workflows, speeding up test suites, and improving code quality and maintainability.
+    photo: moncef-belyamani.jpg
+    socials:
+      - link: https://www.rubyonmac.dev
+        icon: website
+      - link: https://www.moncefbelyamani.com
+        icon: blog
+      - link: https://twitter.com/monfresh
+        icon: twitter
+      - link: https://github.com/monfresh
+        icon: github
+      - link: https://www.linkedin.com/in/moncefbelyamani
+        icon: linkedin
+- title: Caching strategies on https://dev.to
+  description: >-
+    We’ve always put a lot of effort into performance at DEV
+    (https://dev.to/). We want our users to be able to see their content almost
+    instantaneously when interacting with our site. In order to do so we’ve
+    placed emphasis on caching. We’ve had to ask ourselves questions like what
+    are the right things to cache? Which layer in the stack would be best to
+    cache it? And how will this affect the overall performance? During this
+    presentation, I’d like to show you some of the caching strategies we have in
+    place and discuss how they’ve sped up the interactions within our site.
+  speaker:
+    name: Ridhwana Khan
+    bio: >-
+      Ridhwana is a lead software engineer at Forem aka DEV (<a href=https://dev.to/" class="text-primary hover:text-dark" target="_blank">) where she feeds her passion for building & creating useful things! Currently living in Cape Town, South Africa, she enjoys sharing her knowledge and learning from new & interesting people from all around the globe. Ridhwana is also a founder of a non profit organisation called Kasi Maths where she's trying to change the state of education in South Africa one student at a time...
+    photo: ridhwana-khan.jpg
+    socials:
+      - link: https://www.linkedin.com/in/ridhwanakhan/
+        icon: linkedin
+      - link: https://ridhwana.com/
+        icon: website
+      - link: https://twitter.com/Ridhwana_K
+        icon: twitter
+
+- title: "Let’s Extract a Class: The Single Responsibility Principle and Design Patterns"
+  description: >-
+    We’ll talk about going beyond “fat model, skinny controller” and the
+    importance of following the Single Responsibility Principle. Several common
+    design patterns will be discussed, but the emphasis will be on the
+    importance of encapsulating your logic in whatever way you choose that makes
+    the code readable and maintainable. Finally, how do you get your team on
+    board?
+  speaker:
+    name: Jon Evans
+    bio: >-
+      Jon Evans lives in Lyons, CO with his partner, two children, and two dogs. Currently a software engineer at Gusto, he’s been writing software professionally for 15 years and writing primarily Ruby for the last 12. On the weekend, you’ll find him hiking or poking about in a creek with his kids.
+    photo: jon-evans.jpg
+    socials:
+      - link: https://twitter.com/@jon_evans
+        icon: twitter
+      - link: https://ruby.social/@jevans@ruby.social
+        icon: mastodon
+- title: The pursuit of happiness.
+  description: >-
+    Who in this world would say ‘no’ to being a little happier? Luckily for us
+    there has been a lot of wonderful scientific studies done on human
+    happiness. This talk will cover a number of my favorite studies in this
+    field, and how they can be applied to life and careers in tech.
+  speaker:
+    name: Dustin Haefele-Tschanz
+    bio: >-
+      Dustin is a Software Engineer at Spreedly who loves a good pun, and riding his bike over bridges because the unabridged version is too long. In a previous life he was a Chemical engineer, but over the years he grew unhappy with factory work. His passion for researching everything he could find about human happiness led him to quit his job, join a bootcamp, spend a few months exploring South America and finally jumping into Software Engineering full time. Dustin calls Athens, GA home but his partner is a CU Boulder alum!
+    photo: dustin-haefele.jpg
+    socials:
+- title: Who Wants to be a Ruby Engineer?
+  description: >-
+    Welcome to the Ruby game show where contestants tries to guess the output of
+    a small bit of Ruby code. Sound easy? Here's the challenge: the snippets
+    come from some of the weirdest parts of the Ruby language.  The questions
+    aren't easy but get enough right to win a fabulous prize.
+  speaker:
+    name: Drew Bragg
+    bio: >-
+      Drew is Senior Software Developer at Podia. He's the host of the podcast
+      Code and the Coding Coders who Code it. He also helps to organize the
+      monthly Ruby meet up for Philadelphia (<a href="http://www.phillyrb.org/" class="text-primary hover:text-dark" target="_blank">Philly.rb</a>).  Contrary to popular
+      belief Drew is from Philadelphia, Pennsylvania not Oklahoma.
+    photo: drew-bragg.jpg
+    socials:
+      - link: https://www.drbragg.dev/
+        icon: blog
+      - link: https://github.com/DRBragg
+        icon: github
+      - link: https://twitter.com/DRBragg
+        icon: twitter
+      - link: https://ruby.social/@DRBragg
+        icon: mastodon
+- title: "A Return To Simplicity: Architect Hypermedia REST applications using Hanami + HTMX"
+  description: >-
+    Have you grown tired of overly complex web applications with massive
+    frontend and backend teams? What if you could do all of this with one team
+    of Ruby engineers using a purely Hypermedia RESTful design? Well you can and
+    I'll show you how!
+  speaker:
+    name: Brooke Kuhlmann
+    bio: >-
+      Brooke is the founder/architect of <a href="https://alchemists.io/"
+      class="text-primary hover:text-dark" target="_blank">Alchemists</a> where
+      he <a href="https://alchemists.io/articles" class="text-primary
+      hover:text-dark" target="_blank">writes</a>, <a
+      href="https://alchemists.io/talks" class="text-primary hover:text-dark"
+      target="_blank">speaks</a>, <a href="https://alchemists.io/screencasts"
+      class="text-primary hover:text-dark" target="_blank">teaches</a>, works on
+      a bunch of <a href="https://alchemists.io/projects"
+      class="text-primary hover:text-dark" target="_blank">open source projects</a> (many of which are over a decade old), and
+      <a href="https://alchemists.io/services"
+      class="text-primary hover:text-dark" target="_blank">consults</a>. Ruby is his favorite language and he enjoys sharing -- and
+      leveling up -- with folks where the joy of the craft is transmuted into
+      mastery.
+    photo: brooke-kuhlmann.jpg
+    socials:
+- title: Accessible by default
+  description: >-
+    It’s one thing to build a new application that meets the latest
+    accessibility standards, but it’s another thing to update an existing
+    application to meet them. In this talk, we’ll share how we’re using
+    automated accessibility scanning, preview-driven development, and an
+    accessibility-first form builder to make GitHub’s 15-year-old,
+    1,400-controller Ruby on Rails monolith accessible.
+  speaker:
+    name: Joel Hawksley
+    bio: Joel is a staff software engineer at GitHub, working on user interface architecture and strategy.
+    photo: joel-hawksley.jpg
+    socials:
+      - link: https://hawksley.org/
+        icon: blog
