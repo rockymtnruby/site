@@ -69,9 +69,11 @@
 - title: Licensing and Distributing a Paid CLI With Ruby, Rails, and SwiftUI
   description: >-
     Distributing licenses and enforcing limitations for my "Ruby on Mac" CLI was
-    a super interesting and fun problem to solve. I'll take you on that journey
-    with me, with lessons learned and code samples. You'll learn tactics for
-    thinking through similar problems, and for writing testable code.
+    a super interesting and fun problem to solve. It involved tools such as
+    ruby-packer, shc, Apple's DeviceCheck API, and creating a .pkg installer.
+    I'll take you on that journey with me, with lessons learned and code samples. 
+    You'll learn tactics for thinking through similar problems, and for writing 
+    testable code.
   speaker:
     name: Moncef Belyamani
     bio: >-
