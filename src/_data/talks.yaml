@@ -176,7 +176,7 @@
     name: Brooke Kuhlmann
     bio: >-
       Brooke is the founder/architect of <a href="https://alchemists.io/"
-      class="text-primary hover:text-dark" target="_blank">Alchemists</a> where he <a href="https://alchemists.io/articles" class="text-primary hover:text-dark" target="_blank">writes</a>, <a href="https://alchemists.io/screencasts" class="text-primary hover:text-dark" target="_blank">screencasts</a>, <a href="https://alchemists.io/talks" class="text-primary hover:text-dark" target="_blank">talks</a>, <a href="https://alchemists.io/services" class="text-primary hover:text-dark" target="_blank">consults</a>, and works on <a href="https://alchemists.io/services" class="text-primary hover:text-dark" target="_blank">open source projects</a>, many of which have been actively maintained for over a decade.
+      class="text-primary hover:text-dark" target="_blank">Alchemists</a> where he <a href="https://alchemists.io/articles" class="text-primary hover:text-dark" target="_blank">writes</a>, <a href="https://alchemists.io/screencasts" class="text-primary hover:text-dark" target="_blank">screencasts</a>, <a href="https://alchemists.io/talks" class="text-primary hover:text-dark" target="_blank">talks</a>, <a href="https://alchemists.io/services" class="text-primary hover:text-dark" target="_blank">consults</a>, and works on <a href="https://alchemists.io/projects" class="text-primary hover:text-dark" target="_blank">open source projects</a>, many of which have been actively maintained for over a decade.
     photo: brooke-kuhlmann.jpg
     socials:
 - title: Accessible by default
