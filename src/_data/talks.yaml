@@ -194,3 +194,24 @@
     socials:
       - link: https://hawksley.org/
         icon: blog
+- title: A blueprint for making scary choices
+  description: >-
+    In early 2021 I made the scariest decision of my life — I decided that I was going
+    to stop waiting to find a partner and instead I would have a child by myself. My
+    little boy is now 1 year old, and my life path looks completely different than I
+    ever thought. We all are faced with overwhelming decisions in our lives. How do
+    we know what choice is right for us? Through my own journey I've developed a rubric
+    for evaluating these scary choices — whether professional or personal — and I hope
+    that sharing these lessons might be helpful for you.
+  speaker:
+    name: Davy Stevenson
+    bio: Davy is an independent engineering leader and long-time Ruby enthusiast
+    photo: davy-stevenson.jpg
+    socials:
+      - link: https://www.davystevenson.com/
+        icon: website
+      - link: https://www.linkedin.com/in/davystevenson/
+        icon: linkedin
+      - link: https://ruby.social/@davy
+        icon: mastodon
+
