@@ -6,7 +6,10 @@
 
 title: Rocky Mountain Ruby 2023
 tagline: And we're back!
-email:
+email: mailto:info@rockymtnruby.dev
+twitter:
+  username: rmrubyconf
+  card: summary
 description: >-
   Rocky Mountain Ruby is a single track conference devoted to the Ruby programming language which features technical presentations, community events and outdoor experiences, in beautiful Boulder, Colorado at one of the best times of year.
 main_page:

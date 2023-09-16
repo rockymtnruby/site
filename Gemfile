@@ -33,3 +33,5 @@ gem "bridgetown", "~> 1.2.0"
 gem "puma", "~> 5.6"
 
 gem "bridgetown-svg-inliner", "~> 2.0"
+
+gem "bridgetown-seo-tag", "~> 6.0"
