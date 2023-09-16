@@ -12,6 +12,7 @@ class Builders::DataResources < SiteBuilder
       add_resource name, "#{Bridgetown::Utils.slugify(talk.title)}.md" do
         ___ talk
         layout :talk
+        image "/images/speakers/#{talk.speaker.photo || 'placeholder.png'}"
      end
     end
     site.collections[name].sort_resources!

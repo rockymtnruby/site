@@ -33,6 +33,12 @@ template_engine: erb
 # pagination:
 #   enabled: true
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/logo.png
+
 collections:
   talks:
     sort_by: speaker.title
