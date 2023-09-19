@@ -3,3 +3,8 @@
   level: platinum
   url: https://simiaruminfinitarum.com/
   enabled: false
+- name: Gusto
+  logo: gusto.png
+  level: sapphire
+  url: https://gusto.com/
+  enabled: true

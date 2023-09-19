@@ -36,7 +36,7 @@ main_page:
       navbar: true
       enabled: true
     - name: testimonials # sponsors and/or in the footer?
-      enabled: false
+      enabled: true
     - name: contact # tickets
       enabled: false
     - name: back_to_top
