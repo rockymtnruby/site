@@ -37,7 +37,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /images/logo.svg
+      image: /images/logo.png
 
 collections:
   talks:
