@@ -17,7 +17,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://rockymtnruby.dev" # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
 template_engine: erb
@@ -37,7 +37,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /images/logo.svg
+      image: /images/logo-square.png
 
 collections:
   talks:
