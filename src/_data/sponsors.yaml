@@ -8,3 +8,9 @@
   level: sapphire
   url: https://gusto.com/
   enabled: true
+  footer: true
+- name: FusionAuth
+  logo: fusionauth.png
+  level: community
+  url: https://fusionauth.io
+  enabled: true

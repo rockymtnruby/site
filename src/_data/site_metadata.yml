@@ -35,8 +35,10 @@ main_page:
       label: FAQ
       navbar: true
       enabled: true
-    - name: testimonials # sponsors and/or in the footer?
+    - name: sponsors
+      label: Sponsors
       enabled: true
+      navbar: true
     - name: contact # tickets
       enabled: false
     - name: back_to_top

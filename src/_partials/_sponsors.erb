@@ -1,0 +1,86 @@
+<% sponsor_levels = site.data.sponsors.group_by {|sponsor| sponsor.level } %>
+<section id="sponsors" class="pt-20 md:pt-[120px]">
+    <div class="container px-4">
+        <div class="flex flex-wrap">
+            <div class="mx-4 w-full">
+                <div class="mx-auto mb-[60px] text-center lg:mb-10">
+                    <span class="mb-2 block text-lg font-semibold text-primary">
+                        Sponsors
+                    </span>
+                    <p
+                        class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
+                    >
+                        Rocky Mountain Ruby wouldn't be possible without the support of our generous sponsors.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- I should be a component -->
+        <% if sponsor_levels['sapphire'] %>
+            <div class="flex flex-wrap">
+                <div class="mx-4 w-full">
+                    <div class="wow fadeInUp" data-wow-delay=".2s">
+                        <div class="ud-title mb-8">
+                            <h4 class="text-center font-medium text-lg text-[#2672B5] mb-8">Sapphire Sponsors</h4>
+                        </div>
+                        <div class="ud-brands-logo flex flex-wrap items-center justify-center">
+                            <% sponsor_levels['sapphire'].each do |sponsor| %>
+                                <div class="ud-single-logo mr-10 mb-5 max-w-[300px]">
+                                    <a
+                                        href="<%= sponsor.url %>"
+                                        target="_blank"
+                                        rel="nofollow noopner"
+                                    >
+                                        <img
+                                            src="/images/sponsors/<%= sponsor.logo %>"
+                                            alt="<%= sponsor.name %>"
+                                            class="grayscale duration-300 hover:filter-none"
+                                        />
+                                    </a>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+        <% end %>
+        <% if sponsor_levels['community'] %>
+            <div class="mx-4 w-full">
+                <div class="wow fadeInUp" data-wow-delay=".2s">
+                    <div class="ud-title mb-8">
+                        <h4 class="text-center font-medium text-lg text-primary mb-8">Community Sponsors</h4>
+                    </div>
+                    <div class="ud-brands-logo flex flex-wrap items-center justify-center">
+                        <% sponsor_levels['community'].each do |sponsor| %>
+                            <div class="ud-single-logo mr-10 mb-5 max-w-[200px]">
+                                <a
+                                    href="<%= sponsor.url %>"
+                                    target="_blank"
+                                    rel="nofollow noopner"
+                                >
+                                    <img
+                                        src="/images/sponsors/<%= sponsor.logo %>"
+                                        alt="<%= sponsor.name %>"
+                                        class="grayscale duration-300 hover:filter-none"
+                                    />
+                                </a>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+            </div>
+    </div>
+    <div class="flex flex-wrap">
+        <div class="mx-4 w-full">
+            <div class="mx-auto mb-[60px] text-center lg:mb-10">
+                <p
+                    class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
+                >
+                    Interested in supporting Rocky Mountain Ruby? Find out about <a href="/sponsorship" class="text-dark hover:text-primary" target="_blank">sponsorship</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
