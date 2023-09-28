@@ -1,0 +1,8 @@
+<% talk = talk_from_slug slug %>
+<a
+    href="<%= talk.relative_url %>"
+    class="hover:text-primary font-semibold"
+    target="_blank"
+>
+    <%= talk.data.title %> - <%= talk.data.speaker.name %>
+</a>
