@@ -3,19 +3,19 @@ layout: page
 title: Boulder Guide
 top_level: false
 ---
-<% 
-transportation_options = [ 
+<%
+airport_transportation_options = [
 	{href: 'https://app.rtd-denver.com/route/AB/schedule?serviceType=3&direction=Eastbound&branch=', inner_html: 'AB1 Bus', description: 'This bus takes you directly to Downtown Boulder'},
 	{href: 'https://www.flydenver.com/parking_transit/transit/mobile-app-services', inner_html: 'DIA Instructions Page for Ride App Service', description: 'If you plan to take a ride-sharing service, the Denver International Airport provides some helpful tips/instructions.'},
 	{href: 'https://www.flydenver.com/parking_transit/transit/shared-vans', inner_html: 'DIA Transportation Page', description: 'The Denver International Airport provides other options such as shared-rides and commuter trains.'},
 ]
 
 coffee_places = [
-	{href: 'https://www.boxcarcoffeeroasters.com/', inner_html: 'Boxcar Coffee Roasters', address: '1825 Pearl St, Boulder, CO 80302'}, 
+	{href: 'https://www.boxcarcoffeeroasters.com/', inner_html: 'Boxcar Coffee Roasters', address: '1825 Pearl St, Boulder, CO 80302'},
 	{href: 'https://january.coffee/', inner_html: 'January Coffee', address: '1886 30th St Suite B, Boulder, CO 80301'},
 	{href: 'https://ozocoffee.com/ozo-east-pearl', inner_html: 'Ozo Coffee', address: '1521 Pearl St, Boulder, CO 80302'},
 	{href: 'https://www.thelaughinggoat.com/', inner_html: 'The Laughing Goat', address: '1709 Pearl St, Boulder, CO 80302'},
-] 
+]
 
 food_places = [
 	{href: 'https://boulder.avantifandb.com/', inner_html: 'Avanti Food and Beverage', address: '1401 Pearl St, Boulder, CO 80302'},
@@ -57,11 +57,12 @@ activity_places = [
       70s (18°-23°C) and the average low is 40°F (4°C).
   </p>
   <h3 class="text-[28px] font-medium text-primary">Transportation</h3>
-	<% transportation_options.each do |transport| %>
+  <h4 class="text-[20px] font-medium text-primary">From the Airport</h4>
+	<% airport_transportation_options.each do |transport| %>
 		<ul>
 				<li class="px-3">
 						<a href="<%= transport[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-							<%= transport[:inner_html] %> 
+							<%= transport[:inner_html] %>
 						</a>
 						<p class="mb-8 text-base leading-relaxed">
 							<%= transport[:description] %>
@@ -75,10 +76,10 @@ activity_places = [
       <ul>
           <li class="px-3">
               <a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %> 
+								<%= place[:inner_html] %>
               </a>
               <address class="text-base leading-relaxed">
-								<%= place[:address] %> 
+								<%= place[:address] %>
               </address>
           </li>
       </ul>
@@ -90,10 +91,10 @@ activity_places = [
 			<ul>
 					<li class="px-3">
 							<a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %> 
+								<%= place[:inner_html] %>
 							</a>
 							<address class="text-base leading-relaxed">
-								<%= place[:address] %> 
+								<%= place[:address] %>
 							</address>
 					</li>
 			</ul>
@@ -105,10 +106,10 @@ activity_places = [
 			<ul>
 					<li class="px-3">
 							<a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %> 
+								<%= place[:inner_html] %>
 							</a>
 							<address class="text-base leading-relaxed">
-								<%= place[:address] %> 
+								<%= place[:address] %>
 							</address>
 					</li>
 			</ul>
@@ -120,7 +121,7 @@ activity_places = [
 			<ul>
 					<li class="px-3">
 							<a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %> 
+								<%= place[:inner_html] %>
 							</a>
 					</li>
 			</ul>
