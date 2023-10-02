@@ -96,7 +96,7 @@ GEM
     nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
     public_suffix (5.0.1)
-    puma (5.6.7)
+    puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (3.0.7)
@@ -128,7 +128,7 @@ DEPENDENCIES
   bridgetown (~> 1.2.0)
   bridgetown-seo-tag (~> 6.0)
   bridgetown-svg-inliner (~> 2.0)
-  puma (~> 5.6)
+  puma (< 7)
 
 BUNDLED WITH
    2.4.6
