@@ -62,3 +62,33 @@ body {
   width: 35px;
   stroke-width: 1;
 }
+
+.sponsor-ruby {
+  @apply max-w-[350px];
+}
+
+.sponsor-sapphire {
+  @apply max-w-[300px];
+}
+
+.sponsor-emerald {
+  @apply max-w-[300px];
+}
+
+.sponsor-community {
+  @apply max-w-[200px];
+}
+
+.sponsor-podcast {
+  @apply max-w-[100px];
+  & img {
+    @apply max-h-[35px];
+  }
+}
+
+.sponsor-travel {
+  @apply max-w-[100px];
+  & img {
+    @apply max-h-[35px];
+  }
+}

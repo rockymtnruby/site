@@ -1,8 +1,8 @@
 - name: Simiarum Infinitarum
   logo: si-logo.jpg
-  level: platinum
+  level: Ruby
   url: https://simiaruminfinitarum.com/
-  enabled: false
+  enabled: true
 - name: Gusto
   logo: gusto.png
   level: sapphire
@@ -13,4 +13,19 @@
   logo: fusionauth.png
   level: community
   url: https://fusionauth.io
+  enabled: true
+- name: Podia
+  logo: podia-logo-purple.png
+  level: travel
+  url: https://podia.com
+  enabled: true
+- name: Alchemists
+  logo: alchemists.png
+  level: travel
+  url: https://www.alchemists.io/
+  enabled: true
+- name: Spreedly
+  logo: spreedly.png
+  level: travel
+  url: https://www.spreedly.com/
   enabled: true
