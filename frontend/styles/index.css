@@ -82,13 +82,13 @@ body {
 .sponsor-podcast {
   @apply max-w-[100px];
   & img {
-    @apply max-h-[35px];
+    @apply max-h-[50px];
   }
 }
 
 .sponsor-travel {
   @apply max-w-[100px];
   & img {
-    @apply max-h-[35px];
+    @apply max-h-[50px];
   }
 }

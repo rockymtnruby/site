@@ -29,3 +29,23 @@
   level: travel
   url: https://www.spreedly.com/
   enabled: true
+- name: The Ruby On Rails Podcast
+  logo: ruby-on-rails-podcast.png
+  level: podcast
+  url: https://www.therubyonrailspodcast.com/
+  enabled: true
+- name: Code and the Coding Coders who Code it
+  logo: code-and-the-coding-coders-who-code-it.png
+  level: podcast
+  url: https://podcast.drbragg.dev/
+  enabled: true
+- name: The Bike Shed
+  logo: the-bike-shed.png
+  level: podcast
+  url: https://www.bikeshed.fm/
+  enabled: true
+- name: IndieRails
+  logo: indie-rails.png
+  level: podcast
+  url: https://www.indierails.com/
+  enabled: true
