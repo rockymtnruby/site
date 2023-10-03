@@ -49,3 +49,8 @@
   level: podcast
   url: https://www.indierails.com/
   enabled: true
+- name: LaunchPad Lab
+  logo: launchpad-lab.jpg
+  level: travel
+  url: https://launchpadlab.com/
+  enabled: true
