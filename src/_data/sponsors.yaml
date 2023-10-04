@@ -54,3 +54,8 @@
   level: travel
   url: https://launchpadlab.com/
   enabled: true
+- name: CopiousFreeTime
+  logo: copiousfreetime.png
+  level: travel
+  url: https://ruby.social/@copiousfreetime
+  enabled: true
