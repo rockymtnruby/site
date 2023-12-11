@@ -57,11 +57,13 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
-                    <a href="https://ti.to/rocky-mountain-ruby/2023" class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark" target="_blank">
+                <% if site.metadata.registration_open %>
+                    <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
+                        <a href="https://ti.to/rocky-mountain-ruby/2023" class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark" target="_blank">
                         Register
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                <% end %>
             </div>
         </div>
     </div>
