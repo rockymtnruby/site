@@ -12,7 +12,7 @@ class Shared::Navbar < Bridgetown::Component
   end
 
   def top_level_pages
-    @site.collections.pages.resources.select { |r| r.data.top_level }.sort_by { |r| r.data.title }
+    @site.collections.pages.resources.select { |r| r.data.top_level && r.data.enabled }.sort_by { |r| r.data.title }
   end
 
   def scroll_class
