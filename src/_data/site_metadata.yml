@@ -28,7 +28,7 @@ main_page:
     - name: program
       label: Program
       navbar: true
-      enabled: true
+      enabled: false
     - name: cfp
       label: CFP
       navbar: true
@@ -38,10 +38,10 @@ main_page:
     - name: faq
       label: FAQ
       navbar: true
-      enabled: false
+      enabled: true
     - name: sponsors
       label: Sponsors
-      enabled: true
+      enabled: false
       navbar: true
     - name: contact # tickets
       enabled: false
