@@ -1,8 +1,14 @@
 questions_and_answers:
+  - q: When is the Call for Papers?
+    a: The CFP will open April 15th and close May 15th, 2024. The speaker lineup will be announced on June 1st, 2024
+  - q: When will tickets be available?
+    a: Ticket will go on sale on June 1st, 2024 when the speaker lineup is announced.
   - q: How many attendees do you expect?
-    a: Our goal is 100-150. The Venue can hold up to 240.
+    a: Our goal is 150. The Venue can hold up to 240.
   - q: Are you looking for sponsors?
     a: Yes! Visit our <a href="/sponsorship" class="text-primary hover:text-dark">Sponsorship Page</a>.
+  - q: Where's the schedule?
+    a: We will finalize the schedule after the speakers have be chosen.
   - q: Will the conference talks be recorded?
     a: >-
       This is a stretch goal. If we sell enough tickets to cover the cost of
@@ -15,11 +21,5 @@ questions_and_answers:
       idea how many people we'll get. The plan is to make it work with a small
       number of attendees. Our stretch goals include recording the talks,
       t-shirts, and breakfast burritos.
-  - q: What's the COVID policy?
-    a: >-
-      Based on current CDC guidelines, we will not have a mask or vaccine
-      mandates. However, masks are welcome and vaccination encouraged (science
-      works!). If you are feeling unwell, please do not attend, we will refund
-      your ticket on request.
   - q: Will there be a job fair?
     a: "No, but we will have a #jobs channel on our conference Slack group for companies and attendees to share opportunities."
