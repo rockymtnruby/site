@@ -4,7 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Rocky Mountain Ruby 2023
+title: Rocky Mountain Ruby 2024
 tagline: And we're back!
 email: mailto:info@rockymtnruby.dev
 twitter:
