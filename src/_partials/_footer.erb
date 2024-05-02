@@ -68,18 +68,18 @@
                                     Register
                                 </a>
                             <% end %>
-                            <% @site.collections.pages.resources.select { |r| r.data.top_level }.sort_by { |r| r.data.title }.each do |page| %>
+                            <% @site.collections.pages.resources.select { |r| r.data.top_level && r.data.enabled }.sort_by { |r| r.data.title }.each do |page| %>
                                 <a
                                     href="<%= page.relative_url %>"
-                                    class="px-3 text-base text-[#f3f4fe] hover:text-dark"
+                                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
                                 >
                                     <%= page.data.title  %>
                                 </a>
                             <% end %>
-                            <% @site.collections.pages.resources.select { |r| r.data.footer_only }.sort_by { |r| r.data.title }.each do |page| %>
+                            <% @site.collections.pages.resources.select { |r| r.data.footer_only && r.data.enabled }.sort_by { |r| r.data.title }.each do |page| %>
                                 <a
                                     href="<%= page.relative_url %>"
-                                    class="px-3 text-base text-[#f3f4fe] hover:text-dark"
+                                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
                                 >
                                     <%= page.data.title  %>
                                 </a>
