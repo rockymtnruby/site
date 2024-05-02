@@ -35,6 +35,8 @@ main_page:
       enabled: false
     - name: location
       enabled: true
+    - name: contact
+      enabled: true
     - name: faq
       label: FAQ
       navbar: true

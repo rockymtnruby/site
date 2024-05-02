@@ -37,7 +37,7 @@ module.exports = {
         // black: "#32CD32",
         // dark: "#32CD32",
         // "dark-700": "#32CD32",
-        primary: "#AC0C0F",
+        primary: "#B20009",
         // secondary: "#32CD32",
         // "body-color": "#32CD32",
         // warning: "#32CD32",
