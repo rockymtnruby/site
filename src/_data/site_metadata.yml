@@ -32,7 +32,7 @@ main_page:
     - name: cfp
       label: CFP
       navbar: true
-      enabled: false
+      enabled: true
     - name: location
       enabled: true
     - name: contact
