@@ -32,11 +32,11 @@ main_page:
     - name: cfp
       label: CFP
       navbar: true
-      enabled: true
+      enabled: false
     - name: location
       enabled: true
     - name: contact
-      enabled: true
+      enabled: false
     - name: faq
       label: FAQ
       navbar: true
@@ -45,7 +45,7 @@ main_page:
       label: Sponsors
       enabled: false
       navbar: true
-    - name: contact # tickets
+    - name: tickets
       enabled: false
     - name: back_to_top
       enabled: true
