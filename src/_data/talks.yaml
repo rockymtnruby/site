@@ -171,6 +171,31 @@
         icon: linkedin
       - link: https://twitter.com/amirrajan
         icon: twitter
+- title: "Building AI agents in Ruby"
+  description: >-
+    The Coatue AI report is putting AI models at the centerpiece of all modern tech stacks going forward that Application 
+    Devs will be using to build on top of. It would not be controversial to say that the Ruby ecosystem lacks in its support
+    and adoption of AI, ML and DS libraries. If we’d like to stay relevant in the future, we need to start building the foundations now. 
+    We’ll look at what Generative AI is, what kind of applications developers in other communities are building and how Ruby can be 
+    used to build similar applications today. We’ll cover Retrieval Augmented Generation (RAG), vector embeddings and semantic search, 
+    prompt engineering, and what the state of art (SOTA) in evaluating LLM output looks like today. We will also cover AI Agents, 
+    semi-autonomous general purpose LLM-backed applications, and what they’re capable of today. We'll make a case why Ruby is a great 
+    language to build these applications because of its strengths and its incredible ecosystem. After the slides, we'll build an AI Agent in 15 min.
+  speaker:
+    name: Andrei Bondarev
+    bio: >-
+      Experienced software engineering professional that made his impact at Spree Commerce, WeddingWire, FiscalNote, NPR, 
+      and USA Today. He runs a software dev firm, and serves as a Fractional CTO. He enjoys playing tennis and going on long runs.
+    photo: andrei-bondarev.jpg
+    socials:
+      - link: https://www.sourcelabs.io/
+        icon: website
+      - link: https://medium.com/@rushing_andrei
+        icon: blog
+      - link: https://www.linkedin.com/in/andreibondarev/
+        icon: linkedin
+      - link: https://twitter.com/rushing_andrei
+        icon: twitter
 - title: "New design pattern for Shifting Constants Away from your Rails business logic"
   description: >-
     Explore a new pattern that solves the challenges of managing constants in Rails applications. Learn how this innovative approach simplifies handling constants, improving code readability and maintainability. The presentation will demonstrate current approaches, their problems in details and this pattern with examples applicable to any Rails project.
