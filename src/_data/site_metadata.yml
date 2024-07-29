@@ -28,7 +28,7 @@ main_page:
     - name: program
       label: Program
       navbar: true
-      enabled: false
+      enabled: true
     - name: cfp
       label: CFP
       navbar: true

@@ -1,217 +1,198 @@
-- title: Modularizing Rails Monoliths One Bite at a Time
+- title: "Evolution of Real-Time and AnyCable Pro"
   description: >-
-    As Rails monoliths grow, coupling becomes increasingly difficult to
-    manage. Many have reached for hope in microservices but instead found higher
-    complexity. The Modular Monolith approach is a proven, lightweight
-    alternative that offers the benefits of enforced boundaries without being
-    cumbersome. This talk proposes a phased approach to refactoring toward this
-    style using the packwerk gem.
+    When we launched AnyCable Pro at Evil Martians in 2021, our goal was to simplify real-time functionality for all 
+    Rails developers while making it commercially successful for our company. We aimed to build what people wanted and 
+    saw their priorities shift from GraphQL to Hotwire, from chats to collaboration, and to AI-powered voice apps. 
+    Initially focused on performance, we soon tackled WebSocket reliability and developer productivity, culminating 
+    in the launch of Managed AnyCable earlier this year. Our journey, fueled by consulting revenue, is not without 
+    valuable insights. Let’s reflect on our story, share our learnings, and glimpse into the future of AnyCable and 
+    real-time applications.
   speaker:
-    name: Marc Reynolds
+    name: Irina Nazarova
     bio: >-
-      Marc is an Engineering Manager at Doximity where he builds software to make doctors’ lives easier. He’s been working in Ruby for more than a decade and loves the beauty and simplicity of the language. When away from his computer, Marc enjoys training in Brazilian Jiu-Jitsu and snowboarding in Taos, New Mexico.
-    photo: marc-reynolds.jpg
+      Irina is the CEO of the consulting company Evil Martians and a co-founder of the real-time infrastructure product 
+      AnyCable. Her two passions are film photography and making open source projects sustainable. Armed with wit, passion, 
+      and a sprinkle of mischief, Irina proudly steers Evil Martians toward extraordinary achievements!
+    photo: irina-nazarova.jpg
     socials:
-      - link: https://github.com/marcreynolds
-        icon: github
-      - link: https://www.linkedin.com/in/marcreynolds1/
-        icon: linkedin
-- title: Turbo Frames Explored... for Fun and Profit
-  description: >-
-    The ‘new magic’ came at the end of 2020: ✨Hotwire⚡️: Stimulus, Turbo
-    Streams, Strada, Turbo Drive, and Turbo Frames. Each extremely capable and
-    powerful in its own right, but with a wide spread of functions and some
-    overlaps, it can be tough to see what’s what. Let’s explore just one avenue:
-    Turbo Frames. Let’s see what it can _really_ do.
-  speaker:
-    name: Jon Sullivan
-    bio: >-
-      Greetings! I’m Jon. I’ve been in the software world for about ten years
-      and continue to chase performant/efficient code while maximizing
-      readability and (hopefully) minimizing bite-yourself-a-few-years-later
-      code. Balance is everything! While I am a tinkering engineer, electrical
-      enthusiast, digital minimalist, photographer, and reader, I’m looking
-      forward to meeting you, dear reader, and finding out who YOU are! I have a
-      deep love for long, slow conversations and comfy chairs — let’s find some.
-    photo: jon-sullivan.jpg
-    socials:
-      - link: https://jonsully.net
-        icon: blog
-- title: Go Pro with POROs
-  description: >-
-    Plain Old Ruby Objects (POROs) are having a moment. Maybe you’ve heard a
-    whisper in the corner about the jack-of-all trades Service Object, or a
-    glimmering echo of advocacy for non-database-backed domain models? Think
-    you’re using them right? Afraid you’re using them wrong? Then this is the
-    talk for you! We’re going to explore the wonderful world of “convention plus
-    choose-your-own configuration” of Rails codebases and the shining role of
-    POROs (with their ride or dies, the Module). Come hear about the diversity
-    of design patterns out in the wild so you too can confidently tell your
-    coworkers “let’s just use a PORO for that”.
-  speaker:
-    name: Ifat Ribon
-    bio: >-
-      Ifat is a Principal Architect at LaunchPad Lab, a digital product agency
-      headquartered in Chicago. Ifat brings her consulting background to
-      software development, and enjoys collaborating with others to bring new
-      digital products to life. Her coworkers describe her as a “problem-solver
-      to her core,” with the ability to see multiple solutions in real-time, and
-      support her team in executing on technical decisions. Outside of work Ifat
-      is an avid runner, with a fondness for Chicago’s lakeshore path.
-    photo: ifat-ribon.jpg
-    socials:
-      - link: https://github.com/inveterateliterate
-        icon: github
-      - link: https://www.linkedin.com/in/ifatribon/
-        icon: linkedin
-      - link: https://twitter.com/i_ribon9
-        icon: twitter
-- title: Licensing and Distributing a Paid CLI With Ruby, Rails, and SwiftUI
-  description: >-
-    Distributing licenses and enforcing limitations for my "Ruby on Mac" CLI was
-    a super interesting and fun problem to solve. It involved tools such as
-    ruby-packer, shc, Apple's DeviceCheck API, and creating a .pkg installer.
-    I'll take you on that journey with me, with lessons learned and code samples. 
-    You'll learn tactics for thinking through similar problems, and for writing 
-    testable code.
-  speaker:
-    name: Moncef Belyamani
-    bio: >-
-      Moncef is the creator of Ruby on Mac: the easiest, fastest, and most reliable way to set up and maintain a proper Ruby dev environment on a Mac. It's the result of helping 100K+ people over the past 11 years, and 100+ hours of research and testing on 4 Macs. Before that, Moncef spent 8 years in Civic Tech working on open source Rails projects that serve millions of people, such as login.gov. He also helped teams save $100K+/year through automating manual workflows, speeding up test suites, and improving code quality and maintainability.
-    photo: moncef-belyamani.jpg
-    socials:
-      - link: https://www.rubyonmac.dev
+      - link: https://evilmartians.com/
         icon: website
-      - link: https://www.moncefbelyamani.com
+      - link: https://evilmartians.com/chronicles
         icon: blog
-      - link: https://twitter.com/monfresh
+      - link: https://www.linkedin.com/in/nonconstant/
+        icon: linkedin
+      - link: https://twitter.com/inazarova
         icon: twitter
-      - link: https://github.com/monfresh
-        icon: github
-      - link: https://www.linkedin.com/in/moncefbelyamani
-        icon: linkedin
-- title: Caching strategies on https://dev.to
+- title: "Closing the Gap: How to Leap from Bootcamp to Job"
   description: >-
-    We’ve always put a lot of effort into performance at DEV
-    (https://dev.to/). We want our users to be able to see their content almost
-    instantaneously when interacting with our site. In order to do so we’ve
-    placed emphasis on caching. We’ve had to ask ourselves questions like what
-    are the right things to cache? Which layer in the stack would be best to
-    cache it? And how will this affect the overall performance? During this
-    presentation, I’d like to show you some of the caching strategies we have in
-    place and discuss how they’ve sped up the interactions within our site.
+    Been to a bootcamp but still trying to land that first real job? Perhaps you've landed an apprenticeship or entry-level job but anxious to move up?
+    Or perhaps you lead a team and wish you knew how to acclimate junior developers seamlessly into your organization?
+    This session is geared for you.
+    Bootcamps can be helpful as a place to start, but there's always a gap between a bootcamp skillset and the skills required for a real job as a Ruby developer.
+    In this talk, I'll lay out a practical guide to acquiring the skills and knowledge you'll need to get your foot into the industry or reach that next rung on your career ladder.
   speaker:
-    name: Ridhwana Khan
+    name: Jeff Cohen
     bio: >-
-      Ridhwana is a lead software engineer at Forem aka DEV (<a href=https://dev.to/" class="text-primary hover:text-dark" target="_blank">) where she feeds her passion for building & creating useful things! Currently living in Cape Town, South Africa, she enjoys sharing her knowledge and learning from new & interesting people from all around the globe. Ridhwana is also a founder of a non profit organisation called Kasi Maths where she's trying to change the state of education in South Africa one student at a time...
-    photo: ridhwana-khan.jpg
+      Jeff is a self-taught software engineer going on 30 years now, and a Rubyist since 2006. He runs Purple Workshops, 
+      a small software studio in Chicago that build custom software applications in Rails. He also teaches in the Masters 
+      Program for Computer Science at the University of Chicago, teaching web development and applied software engineering. 
+      He has a particular passion for the learning sciences and helping new developers find solid careers in the software industry.
+    photo: jeff-cohen.jpg
     socials:
-      - link: https://www.linkedin.com/in/ridhwanakhan/
-        icon: linkedin
-      - link: https://ridhwana.com/
+      - link: https://softwareforresearch.com/
         icon: website
-      - link: https://twitter.com/Ridhwana_K
+      - link: https://linkedin.com/in/codeteacher/
+        icon: linkedin
+- title: "Beyond Code: Crafting effective discussions to further technical decision-making"
+  description: >-
+    Whiteboards. Proof of Concepts. Pairing. Spikes. These are all tools we use every day to have high-level technical 
+    conversations about ideas we propose or approaches we think are the “right” way. As someone advances in their career 
+    into more experienced levels of software engineering, however, a critical skill becomes how you conduct and lead these 
+    conversations. It involves clearly articulating a vision and securing buy-in, while also valuing and integrating 
+    the diverse perspectives and feedback from your peers. The goal beyond each individual conversation is to foster 
+    an environment where ideas can be exchanged, discussed, enhanced, and decided on. You’ll walk away from this talk 
+    with some new, innovative approaches to try out that not only help get your technical ideas across but also solicit 
+    additional thoughts and opinions in ways that engage and effectively address different points of view.
+  speaker:
+    name: Allison McMillan
+    bio: >-
+      Allison McMillan is a fractional VP of Engineering and Engineering Leadership Consultant. She’s previously held 
+      leadership roles at QuotaPath, DEV, and GitHub. Allison has worn many hats in multiple industries as a community 
+      builder, managing director, and software engineer.
+
+      Allison started a podcast about being a parent in tech, Parent Driven Development, and is an internationally recognized 
+      keynote speaker. She is very involved in the Ruby community as a current board member and the former President of 
+      Ruby Central. You can find more writing, speaking, and consulting information on her website, www.allisonmcmillan.com.
+    photo: allison-mcmillan.jpg
+    socials:
+      - link: https://daydreamsinruby.com/
+        icon: website
+      - link: https://linkedin.com/in/apmcmillan/
+        icon: linkedin
+- title: Laziness is a Virtue
+  description: >-
+    We can write Ruby code in any number of styles, but the community has some accepted norms. For example, almost nobody uses 
+    `for` loops any more. We've decided that some styles are "better" than others. And we can keep finding "better" styles.
+
+    In this talk, we'll dig into a more functional "lazy" style. Instead of setting up variables ahead of time, we'll call 
+    methods as needed. Instead of thinking about how to compute things, we'll think about properties of objects. 
+    This style has improved the readability of my code, and it will help you too. testable code.
+  speaker:
+    name: Craig Buchek
+    bio: >-
+      Craig has been using Ruby and Rails since 2005. He enjoys writing concise readable code, especially in Ruby. He 
+      prefers a player-coach role, helping teams improve their processes, technical practices, and automation.
+
+      Giving a conference talk is Craig's way to strike up more conversations. If you want to make small talk, ask Craig 
+      about traveling, attending concerts, canoeing, beekeeping, or where he was when the pandemic hit.
+    photo: craig-buchek.jpeg
+    socials:
+      - link: https://craigbuchek.com/
+        icon: website
+      - link: https://dev.to/@craigbuchek
+        icon: blog
+      - link: https://twitter.com/craigbuchek
+        icon: twitter
+      - link: https://www.linkedin.com/in/craigbuchek/
+        icon: linkedin
+- title: Attraction Mailbox - Why I love Action Mailbox
+  description: >-
+    Email is a powerful and flexible way to extend the capabilities of your Rails application. It’s a familiar and low 
+    friction way for users to interact with your app.
+
+    As much as you may want your users to access your app, they may not need to. Email is a great example of focusing on 
+    the problem at hand instead of an over-complicated solution.
+
+    We’ll take a deeper look at Action Mailbox and how to route and process your inbound emails.
+  speaker:
+    name: Cody Norman
+    bio: >-
+      Cody Norman is an independent software consultant focusing on SaaS on startups. He has years of experience working 
+      with early stage startups and building software teams. As a career changer, he also has a passion for working with 
+      and mentoring early career developers.
+    photo: cody-norman.png
+    socials:
+      - link: https://www.codynorman.com/
+        icon: blog
+      - link: https://www.linkedin.com/in/cody-norman-26832027/
+        icon: linkedin
+      - link: https://twitter.com/cnorm35
         icon: twitter
 
-- title: "Let’s Extract a Class: The Single Responsibility Principle and Design Patterns"
+- title: Catching Waves with Time-Series Data
   description: >-
-    We’ll talk about going beyond “fat model, skinny controller” and the
-    importance of following the Single Responsibility Principle. Several common
-    design patterns will be discussed, but the emphasis will be on the
-    importance of encapsulating your logic in whatever way you choose that makes
-    the code readable and maintainable. Finally, how do you get your team on
-    board?
-  speaker:
-    name: Jon Evans
-    bio: >-
-      Jon Evans lives in Lyons, CO with his partner, two children, and two dogs. Currently a software engineer at Gusto, he’s been writing software professionally for 15 years and writing primarily Ruby for the last 12. On the weekend, you’ll find him hiking or poking about in a creek with his kids.
-    photo: jon-evans.jpg
-    socials:
-      - link: https://twitter.com/@jon_evans
-        icon: twitter
-      - link: https://ruby.social/@jevans@ruby.social
-        icon: mastodon
-- title: The pursuit of happiness.
-  description: >-
-    Who in this world would say ‘no’ to being a little happier? Luckily for us
-    there has been a lot of wonderful scientific studies done on human
-    happiness. This talk will cover a number of my favorite studies in this
-    field, and how they can be applied to life and careers in tech.
-  speaker:
-    name: Dustin Haefele-Tschanz
-    bio: >-
-      Dustin is a Software Engineer at Spreedly who loves a good pun, and riding his bike over bridges because the unabridged version is too long. In a previous life he was a Chemical engineer, but over the years he grew unhappy with factory work. His passion for researching everything he could find about human happiness led him to quit his job, join a bootcamp, spend a few months exploring South America and finally jumping into Software Engineering full time. Dustin calls Athens, GA home but his partner is a CU Boulder alum!
-    photo: dustin-haefele.jpg
-    socials:
-- title: Who Wants to be a Ruby Engineer?
-  description: >-
-    Welcome to the Ruby game show where contestants tries to guess the output of
-    a small bit of Ruby code. Sound easy? Here's the challenge: the snippets
-    come from some of the weirdest parts of the Ruby language.  The questions
-    aren't easy but get enough right to win a fabulous prize.
-  speaker:
-    name: Drew Bragg
-    bio: >-
-      Drew is Senior Software Developer at Podia. He's the host of the podcast
-      Code and the Coding Coders who Code it. He also helps to organize the
-      monthly Ruby meet up for Philadelphia (<a href="http://www.phillyrb.org/" class="text-primary hover:text-dark" target="_blank">Philly.rb</a>).  Contrary to popular
-      belief Drew is from Philadelphia, Pennsylvania not Oklahoma.
-    photo: drew-bragg.jpg
-    socials:
-      - link: https://www.drbragg.dev/
-        icon: blog
-      - link: https://github.com/DRBragg
-        icon: github
-      - link: https://twitter.com/DRBragg
-        icon: twitter
-      - link: https://ruby.social/@DRBragg
-        icon: mastodon
-- title: "A Return To Simplicity: Architect Hypermedia REST applications using Hanami + HTMX"
-  description: >-
-    Have you grown tired of overly complex web applications with massive
-    frontend and backend teams? What if you could do all of this with one team
-    of Ruby engineers using only a Hypermedia RESTful design? Well you can and
-    I'll show you how!
-  speaker:
-    name: Brooke Kuhlmann
-    bio: >-
-      Brooke is the founder/architect of <a href="https://alchemists.io/"
-      class="text-primary hover:text-dark" target="_blank">Alchemists</a> where he <a href="https://alchemists.io/articles" class="text-primary hover:text-dark" target="_blank">writes</a>, <a href="https://alchemists.io/screencasts" class="text-primary hover:text-dark" target="_blank">screencasts</a>, <a href="https://alchemists.io/talks" class="text-primary hover:text-dark" target="_blank">talks</a>, <a href="https://alchemists.io/services" class="text-primary hover:text-dark" target="_blank">consults</a>, and works on <a href="https://alchemists.io/projects" class="text-primary hover:text-dark" target="_blank">open source projects</a>, many of which have been actively maintained for over a decade.
-    photo: brooke-kuhlmann.jpg
-    socials:
-- title: Accessible by default
-  description: >-
-    It’s one thing to build a new application that meets the latest
-    accessibility standards, but it’s another thing to update an existing
-    application to meet them. In this talk, we’ll share how we’re using
-    automated accessibility scanning, preview-driven development, and an
-    accessibility-first form builder to make GitHub’s 15-year-old,
-    1,400-controller Ruby on Rails monolith accessible.
-  speaker:
-    name: Joel Hawksley
-    bio: Joel is a staff software engineer at GitHub, working on user interface architecture and strategy.
-    photo: joel-hawksley.jpg
-    socials:
-      - link: https://hawksley.org/
-        icon: blog
-- title: A blueprint for making scary choices
-  description: >-
-    In early 2021 I made the scariest decision of my life — I decided that I was going
-    to stop waiting to find a partner and instead I would have a child by myself. My
-    little boy is now 1 year old, and my life path looks completely different than I
-    ever thought. We all are faced with overwhelming decisions in our lives. How do
-    we know what choice is right for us? Through my own journey I've developed a rubric
-    for evaluating these scary choices — whether professional or personal — and I hope
-    that sharing these lessons might be helpful for you.
-  speaker:
-    name: Davy Stevenson
-    bio: Davy is an independent engineering leader and long-time Ruby enthusiast
-    photo: davy-stevenson.jpg
-    socials:
-      - link: https://www.davystevenson.com/
-        icon: website
-      - link: https://www.linkedin.com/in/davystevenson/
-        icon: linkedin
-      - link: https://ruby.social/@davy
-        icon: mastodon
+    Time-series data is remarkably common, with applications ranging from IoT to finance. Effectively storing, reading, 
+    and presenting this time-series data can be as finicky as catching the perfect wave.
 
+    In order to understand the best-practices of time-series data, we’ll follow a surfer’s journey as she attempts to 
+    record every wave she’s ever caught. We’ll discover how to structure the time-series data, query for performant access, 
+    aggregate data over timespans, and present the data via an API endpoint. Surf’s up!
+  speaker:
+    name: Liz Heym
+    bio: >-
+      A Senior Software Engineer, Liz has been working in Rails for half a decade, from Series A startups to Cisco 
+      Meraki’s extensive Rails application. Liz has worked closely with the API and Data Infrastructure teams at 
+      Meraki to solidify best practices when dealing with time-series data, and has designed and developed numerous 
+      time-series endpoints to help Meraki’s customers monitor the health of their devices. Outside of work, Liz loves 
+      to hit the amazing surf breaks along the Redwood Coast of California.
+    photo: liz-heym.jpg
+    socials:
+      - link: https://www.linkedin.com/in/elizabeth-heym/
+        icon: linkedin
+
+- title: "The Rails Wasm Event Horizon: Blazing Ahead with Rails in the Browser"
+  description: >-
+    Embark on an exciting journey beyond the conventional boundaries of web development! This talk promises to unravel the mysteries of running Rails directly in your browser, challenging the constraints of ruby.wasm and the framework. We’ll dig into the world of WebAssembly, where threads, networking, and even beloved Nokogiri and SQLite seem out of reach, and we’ll discover how we can extend the horizon and run Rails in the browser.
+    As we wrap up, we'll highlight the missing components in the ecosystem required to transition running Rails in the browser from a theoretical concept to a practical reality. Buckle up!
+  speaker:
+    name: Svyatoslav Kryukov
+    bio: >-
+      My name is Svyatoslav and I'm a backend developer at Evil Martians. For the past 3 years, I've been collaborating with StackBlitz, enhancing the most advanced in-browser IDE powered by WASM. Additionally, I created RunRuby.dev, a playground for experimenting with Ruby in a WebAssembly environment.
+    photo: svyatoslav-kryukov.jpg
+    socials:
+      - link: https://www.linkedin.com/in/svyatoslav-kryukov
+        icon: linkedin
+      - link: https://twitter.com/skryukov_dev
+        icon: twitter
+- title: "DragonRuby: Lessons Learned from building a commercial game engine"
+  description: >-
+    DragonRuby Game Toolkit recently celebrated its 5 year anniversary. Over that time it’s become one of the highest rated and most popular game engines on Itch.io. Amir will share lessons he learned over that period: everything from the low level architecture, to the more human aspects of creating a community around Ruby and the joy its brought to new devs.
+  speaker:
+    name: Amir Rajan
+    bio: >-
+      Amir is an indie game dev and a hacker on DragonRuby Game Toolkit. He's deeply committed to simplifying the complexities of technology. He also lives in a zoo (3 dogs, 3 cats). Send help.
+    photo: amir-rajan.png
+    socials:
+      - link: https://dragonruby.org/
+        icon: website
+      - link: https://amirrajan.net/
+        icon: blog
+      - link: https://www.linkedin.com/in/amirrajan/
+        icon: linkedin
+      - link: https://twitter.com/amirrajan
+        icon: twitter
+- title: "New design pattern for Shifting Constants Away from your Rails business logic"
+  description: >-
+    Explore a new pattern that solves the challenges of managing constants in Rails applications. Learn how this innovative approach simplifies handling constants, improving code readability and maintainability. The presentation will demonstrate current approaches, their problems in details and this pattern with examples applicable to any Rails project.
+  speaker:
+    name: Boris Tsarikov
+    bio: >-
+      I am a Software Engineer with a passion for Ruby. I was a key mentor at Belarus's largest Ruby Lab, my colleagues and I graduated 3 generations of engineers, more than 100 people. I developed the Ruby community at my ex-company EPAM Systems in different locations (Poland, Latin America countries, Spain). Right now I am living in Spain, in Barcelona and also trying to build community with my colleagues and Ruby lovers. Throughout my career, I have worked on Fintech projects and , gaining extensive knowledge and best practices that I would like to share with Ruby enthusiasts at your conference.
+      I am passion about programming languages and best coding practices and different design patterns.
+    photo: boris-tsarikov.jpg
+    socials:
+- title: "Pry Until You Die"
+  description: >-
+    In this talk, I will dive into the ins and outs of Pry, the powerful runtime developer console for Ruby. Many developers know about Pry, but do they understand how it works under the hood? How does `binding.pry` halt code execution and inject itself into the process?
+
+    We'll explore the mechanics of Pry, revealing how it integrates seamlessly with your code. Additionally, I'll share essential tips and tricks to maximize your productivity within Pry sessions, including:
+
+    - Customizing your Pry environment
+    - Navigating and debugging code efficiently
+    - Utilizing advanced Pry features and plugins
+
+    Whether you're a Pry novice or a seasoned user, this session will enhance your debugging and development skills, enabling you to harness Pry's full potential.
+  speaker:
+    name: Tay DeHerrera-Jimenez
+    bio: >-
+      My name is Tay, I'm from Pueblo, Colorado, and I have been a software engineer for over 4 years now. I got my degree in mathematics from CU Boulder and studied backend engineering at Turing School of Software and Design.
