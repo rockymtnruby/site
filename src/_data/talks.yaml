@@ -196,6 +196,29 @@
         icon: linkedin
       - link: https://twitter.com/rushing_andrei
         icon: twitter
+- title: "Empowering the Individual Developer: Ruby on AI"
+  description: >-
+    Integrating AI with Ruby can transform a solo developer's workflow into an incredibly potent force, capable of competing at an unprecedented scale (without needing to learn Python!)
+    
+    This presentation draws on practical real-world experiences. We will explore practical approaches ranging from code generation to real-time data analysis and automated customer support. The emphasis is on new tools that let developers focus more than ever on innovation and creativity.
+    
+    Attendees will leave with a roadmap for integrating AI tools and techniques into their Ruby projects, insights into the potential pitfalls and best practices, and inspiration to explore the boundaries of what a single developer or a small team can achieve with the right tools.
+  speaker:
+    name: Obie Fernandez
+    bio: >-
+      With 30 years in tech and 2 decades in Ruby, Obie, author of "The Rails Way," is a pivotal and well-loved figure. 
+      As co-founder and sole engineer of Olympia, a Rails-based AI startup, he exemplifies building scalable applications 
+      with the "one person framework".
+    photo: obie-fernandez.jpg
+    socials:
+      - link: https://olympia.chat/
+        icon: website
+      - link: https://obie.medium.com/
+        icon: blog
+      - link: https://www.linkedin.com/in/obiefernandez/
+        icon: linkedin
+      - link: https://twitter.com/obie
+        icon: twitter
 - title: "New design pattern for Shifting Constants Away from your Rails business logic"
   description: >-
     Explore a new pattern that solves the challenges of managing constants in Rails applications. Learn how this innovative approach simplifies handling constants, improving code readability and maintainability. The presentation will demonstrate current approaches, their problems in details and this pattern with examples applicable to any Rails project.
