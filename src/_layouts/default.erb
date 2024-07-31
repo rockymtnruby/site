@@ -2,6 +2,7 @@
 <html lang="en" class="scroll-smooth" style="height: 100%">
     <head>
         <%= render "head", metadata: site.metadata, title: data.title %>
+        <script src='https://js.tito.io/v2' async></script>
     </head>
     <body style="height: 100%">
         <%= render Shared::Navbar.new(site: site, metadata: site.metadata, resource: resource) %>

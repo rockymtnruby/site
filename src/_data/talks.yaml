@@ -140,6 +140,32 @@
       - link: https://www.linkedin.com/in/elizabeth-heym/
         icon: linkedin
 
+- title: "Leveling Up Developer Tooling For The Modern Rails & Hotwire Era"
+  description: >-
+    The evolution of developer experience (DX) tooling has been a game-changer in how we build, debug, and enhance web applications.
+
+    This talk aims to illuminate the path toward enriching the Ruby on Rails ecosystem with advanced DX tools, focusing 
+    on the implementation of Language Server Protocols (LSP) for Stimulus and Turbo.
+
+    Drawing inspiration from the rapid advancements in JavaScript tooling, we explore the horizon of possibilities for 
+    Rails developers, including how advanced browser extensions and tools specifically designed for the Hotwire ecosystem 
+    can level up your developer experience.
+  speaker:
+    name: Marco Roth
+    bio: >-
+      Marco is a passionate full-stack developer and a dedicated open-source contributor. As a member of the Hotwire and 
+      StimulusReflex contributors teams he has open-sourced, maintained, and contributed to several libraries in the 
+      Hotwire/Rails ecosystem.
+    photo: marco-roth.jpg
+    socials:
+      - link: https://www.linkedin.com/in/marco-roth/
+        icon: linkedin
+      - link: https://twitter.com/marcoroth_
+        icon: twitter
+      - link: https://marcoroth.dev/blog
+        icon: blog
+      - link: https://marcoroth.dev/
+        icon: website
 - title: "The Rails Wasm Event Horizon: Blazing Ahead with Rails in the Browser"
   description: >-
     Embark on an exciting journey beyond the conventional boundaries of web development! This talk promises to unravel the mysteries of running Rails directly in your browser, challenging the constraints of ruby.wasm and the framework. We’ll dig into the world of WebAssembly, where threads, networking, and even beloved Nokogiri and SQLite seem out of reach, and we’ll discover how we can extend the horizon and run Rails in the browser.

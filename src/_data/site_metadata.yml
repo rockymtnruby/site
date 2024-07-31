@@ -26,7 +26,7 @@ main_page:
     - name: features
       enabled: true
     - name: program
-      label: Program
+      label: Speakers
       navbar: true
       enabled: true
     - name: cfp
