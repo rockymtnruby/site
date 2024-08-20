@@ -14,9 +14,9 @@
                 </div>
             </div>
         </div>
-
+        <% all_sponsors = site.data.sponsors.select {|sponsor| sponsor.enabled } %>
         <% site.data.sponsor_levels.each do |level| %>
-            <% sponsors = site.data.sponsors.select {|sponsor| sponsor.level == level.name } %>
+            <% sponsors = all_sponsors.select {|sponsor| sponsor.level == level.name } %>
             <% unless sponsors.empty? %>
                 <div class="flex flex-wrap">
                     <div class="mx-4 w-full">
