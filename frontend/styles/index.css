@@ -64,6 +64,18 @@ body {
   stroke-width: 1;
 }
 
+.text-ruby {
+  color: #9b111e;
+}
+
+.text-sapphire {
+  color: #0f52ba;
+}
+
+.text-emerald {
+  color: #046307;
+}
+
 .sponsor-ruby {
   @apply max-w-[350px];
 }
@@ -73,7 +85,7 @@ body {
 }
 
 .sponsor-emerald {
-  @apply max-w-[300px];
+  @apply max-w-[275px];
 }
 
 .sponsor-community {
