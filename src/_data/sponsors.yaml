@@ -10,6 +10,13 @@
   url: https://www.appsignal.com/
   enabled: true
   footer: true
+- name: DNSimple
+  logo: dnsimple-logo-blue.png
+  footer_logo: dnsimple-logo-light.png
+  level: emerald
+  url: https://dnsimple.com/
+  enabled: true
+  footer: true
 - name: The Ruby On Rails Podcast
   logo: ruby-on-rails-podcast.png
   level: podcast
