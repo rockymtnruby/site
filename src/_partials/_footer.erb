@@ -62,10 +62,10 @@
                         >
                             <% if site.metadata.registration_open %>
                                 <a
-                                    href="https://ti.to/rocky-mountain-ruby/2023"
+                                    href="/tickets"
                                     class="px-3 text-base text-[#f3f4fe] hover:text-dark"
                                 >
-                                    Register
+                                    Tickets
                                 </a>
                             <% end %>
                             <% @site.collections.pages.resources.select { |r| r.data.top_level && r.data.enabled }.sort_by { |r| r.data.title }.each do |page| %>
