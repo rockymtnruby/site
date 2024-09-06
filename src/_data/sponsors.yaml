@@ -17,16 +17,17 @@
   url: https://dnsimple.com/
   enabled: true
   footer: true
-- name: The Ruby On Rails Podcast
-  logo: ruby-on-rails-podcast.png
+- name: Flagrant
+  logo: FlagrantLogo_Color.svg
+  footer_logo: FlagrantLogo_White.svg
+  level: community
+  url: https://www.beflagrant.com/
+  enabled: true
+- name: Remote Ruby
+  logo: remote-ruby.jpeg
   level: podcast
-  url: https://www.therubyonrailspodcast.com/
-  enabled: false
-- name: Code and the Coding Coders who Code it
-  logo: code-and-the-coding-coders-who-code-it.png
-  level: podcast
-  url: https://podcast.drbragg.dev/
-  enabled: false
+  url: https://www.remoteruby.com
+  enabled: true
 - name: The Bike Shed
   logo: the-bike-shed.png
   level: podcast
