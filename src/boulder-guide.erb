@@ -47,6 +47,13 @@ activity_places = [
 	{href: 'https://www.colorado.com/articles/pearl-street-mall-beloved-boulder-attraction', inner_html: 'Pearl Street'},
 	{href: 'https://streetwisearts.org/walking-tours/', inner_html: 'Streetwise Boulder Mural Walking Tour'},
 ]
+
+hotel_places = [
+	{href: 'https://www.thebradleyboulder.com', inner_html: 'The Bradley Boulder Inn'},
+	{href: 'https://www.boulderado.com', inner_html: 'Hotel Boulderado'},
+	{href: 'https://www.hilton.com/en/hotels/wbubogi-hilton-garden-inn-boulder/', inner_html: 'Hilton Garden Inn Boulder'},
+	{href: 'https://www.marriott.com/hotels/travel/denbo-boulder-marriott', inner_html: 'Marriott Boulder'}
+]
 %>
 <div class="max-w-5xl mx-auto text-lg leading-relaxed text-[#404040] mb-20">
   <h2 class="mb-4 text-3xl font-bold text-primary sm:text-4xl md:text-[42px]">
@@ -76,6 +83,21 @@ activity_places = [
 				</li>
 		</ul>
 	<% end %>
+  <h3 class="text-[28px] font-medium text-primary">Hotels</h3>
+  <div class="mb-10 w-full">
+		<% hotel_places.each do |place| %>
+      <ul>
+          <li class="px-3">
+              <a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
+								<%= place[:inner_html] %>
+              </a>
+              <address class="text-base leading-relaxed">
+								<%= place[:address] %>
+              </address>
+          </li>
+      </ul>
+		<% end %>
+  </div>
   <h3 class="text-[28px] font-medium text-primary">Coffee</h3>
   <div class="mb-10 w-full">
 		<% coffee_places.each do |place| %>
