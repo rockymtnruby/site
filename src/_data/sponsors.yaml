@@ -3,6 +3,13 @@
   level: ruby
   url: https://simiaruminfinitarum.com/
   enabled: false
+- name: Honeybadger
+  logo: honeybadger_logo.svg
+  footer_logo: honeybadger_logo_white.svg
+  level: sapphire
+  url: https://www.honeybadger.io/
+  enabled: true
+  footer: true
 - name: AppSignal
   logo: Appsignal-original-azure.png
   footer_logo: Appsignal-original-white.png

@@ -81,7 +81,11 @@ body {
 }
 
 .sponsor-sapphire {
-  @apply max-w-[300px];
+  @apply max-w-[325px];
+  & img {
+    @apply w-[325px];
+  }
+
 }
 
 .sponsor-emerald {
