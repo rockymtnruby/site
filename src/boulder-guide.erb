@@ -46,6 +46,7 @@ activity_places = [
 	{href: 'https://jdsjoyrides.com/', inner_html: 'JD\'s Joyrides - eBike Tours'},
 	{href: 'https://www.colorado.com/articles/pearl-street-mall-beloved-boulder-attraction', inner_html: 'Pearl Street'},
 	{href: 'https://streetwisearts.org/walking-tours/', inner_html: 'Streetwise Boulder Mural Walking Tour'},
+	{href: 'https://www.alltrails.com/us/colorado/boulder', inner_html: 'Hike Boulder'},
 ]
 
 hotel_places = [
@@ -55,104 +56,71 @@ hotel_places = [
 	{href: 'https://www.marriott.com/hotels/travel/denbo-boulder-marriott', inner_html: 'Marriott Boulder'}
 ]
 %>
-<div class="max-w-5xl mx-auto text-lg leading-relaxed text-[#404040] mb-20">
-  <h2 class="mb-4 text-3xl font-bold text-primary sm:text-4xl md:text-[42px]">
-    Welcome to Boulder!
-  </h2>
-  <p class="mb-8 text-base leading-relaxed">
+
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
+  <h1 class="text-4xl font-bold text-primary mb-8 animated fadeInDown">Welcome to Boulder!</h1>
+
+  <p class="text-xl mb-12 animated fadeIn">
     This guide will help you get to know the city and its surroundings and plan
     your time outside of the conference.
   </p>
-  <h3 class="text-[28px] font-medium text-primary">Weather</h3>
-  <p class="mb-8 text-base leading-relaxed">
+
+  <section class="mb-12 animated fadeInUp">
+    <h2 class="text-3xl font-semibold text-primary mb-4">Weather</h2>
+    <p class="text-lg">
       The weather in Boulder is generally sunny and dry, with low humidity. In
-      early October, daytime temperature are normally in the uppers 60s and low
+      early October, daytime temperatures are normally in the upper 60s and low
       70s (18°-23°C) and the average low is 40°F (4°C).
-  </p>
-  <h3 class="text-[28px] font-medium text-primary">Transportation</h3>
-  <h4 class="text-[20px] font-medium text-primary">From the Airport</h4>
-	<% airport_transportation_options.each do |transport| %>
-		<ul>
-				<li class="px-3">
-						<a href="<%= transport[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-							<%= transport[:inner_html] %>
-						</a>
-						<p class="mb-8 text-base leading-relaxed">
-							<%= transport[:description] %>
-						</p>
-				</li>
-		</ul>
-	<% end %>
-  <h3 class="text-[28px] font-medium text-primary">Hotels</h3>
-  <div class="mb-10 w-full">
-		<% hotel_places.each do |place| %>
-      <ul>
-          <li class="px-3">
-              <a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %>
-              </a>
-              <address class="text-base leading-relaxed">
-								<%= place[:address] %>
-              </address>
-          </li>
-      </ul>
-		<% end %>
-  </div>
-  <h3 class="text-[28px] font-medium text-primary">Coffee</h3>
-  <div class="mb-10 w-full">
-		<% coffee_places.each do |place| %>
-      <ul>
-          <li class="px-3">
-              <a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %>
-              </a>
-              <address class="text-base leading-relaxed">
-								<%= place[:address] %>
-              </address>
-          </li>
-      </ul>
-		<% end %>
-  </div>
-  <h3 class="text-[28px] font-medium text-primary">Food</h3>
-  <div class="mb-10 w-full">
-		<% food_places.each do |place| %>
-			<ul>
-					<li class="px-3">
-							<a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %>
-							</a>
-							<address class="text-base leading-relaxed">
-								<%= place[:address] %>
-							</address>
-					</li>
-			</ul>
-		<% end %>
-  </div>
-  <h3 class="text-[28px] font-medium text-primary">Drinks</h3>
-  <div class="mb-10 w-full">
-		<% drink_places.each do |place| %>
-			<ul>
-					<li class="px-3">
-							<a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %>
-							</a>
-							<address class="text-base leading-relaxed">
-								<%= place[:address] %>
-							</address>
-					</li>
-			</ul>
-		<% end %>
-  </div>
-  <h3 class="text-[28px] font-medium text-primary">Activities</h3>
-  <div class="mb-10 w-full">
-		<% activity_places.each do |place| %>
-			<ul>
-					<li class="px-3">
-							<a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-								<%= place[:inner_html] %>
-							</a>
-					</li>
-			</ul>
-		<% end %>
-  </div>
+    </p>
+  </section>
+
+  <section class="mb-12 animated fadeInUp">
+    <h2 class="text-3xl font-semibold text-primary mb-4">Transportation from the Airport</h2>
+    <ul class="space-y-4">
+      <% airport_transportation_options.each do |transport| %>
+        <li class="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300">
+          <a href="<%= transport[:href] %>" target="_blank" rel="noopener noreferrer" class="text-xl font-medium text-primary hover:underline">
+            <%= transport[:inner_html] %>
+          </a>
+          <p class="mt-2 text-gray-600"><%= transport[:description] %></p>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+
+  <% [
+    { title: "Hotels", places: hotel_places },
+    { title: "Coffee", places: coffee_places },
+    { title: "Food", places: food_places },
+    { title: "Drinks", places: drink_places }
+  ].each_with_index do |category, index| %>
+    <section class="mb-12 animated fadeInUp delay-<%= index + 1 %>s">
+      <h2 class="text-3xl font-semibold text-primary mb-4"><%= category[:title] %></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <% category[:places].each do |place| %>
+          <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300">
+            <a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-xl font-medium text-primary hover:underline">
+              <%= place[:inner_html] %>
+            </a>
+            <address class="mt-2 text-gray-600 not-italic">
+              <%= place[:address] %>
+            </address>
+          </div>
+        <% end %>
+      </div>
+    </section>
+  <% end %>
+
+  <section class="mb-12 animated fadeInUp delay-4s">
+    <h2 class="text-3xl font-semibold text-primary mb-4">Activities</h2>
+    <ul class="space-y-2">
+      <% activity_places.each do |place| %>
+        <li class="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300">
+          <a href="<%= place[:href] %>" target="_blank" rel="noopener noreferrer" class="text-lg text-primary hover:underline">
+            <%= place[:inner_html] %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </section>
 </div>
