@@ -24,27 +24,27 @@ main_page:
       navbar: true
       slug: home
     - name: features
-      enabled: true
+      enabled: false
     - name: program
       label: Speakers
       navbar: true
-      enabled: true
+      enabled: false
     - name: cfp
       label: CFP
       navbar: true
       enabled: false
     - name: location
-      enabled: true
+      enabled: false
     - name: contact
       enabled: false
     - name: faq
       label: FAQ
       navbar: true
-      enabled: true
+      enabled: false
     - name: sponsors
       label: Sponsors
-      enabled: true
-      navbar: true
+      enabled: false
+      navbar: false
     - name: tickets
       enabled: false
     - name: back_to_top
