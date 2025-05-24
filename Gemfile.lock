@@ -79,16 +79,14 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    mini_portile2 (2.8.8)
     minitest (5.22.3)
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
     nio4r (2.7.1)
-    nokogiri (1.16.3-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.16.3-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.16.3-x86_64-linux)
+    nokogiri (1.16.3)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     public_suffix (5.0.4)
     puma (6.4.2)
@@ -116,6 +114,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  arm64-darwin-24
   x86_64-darwin-22
   x86_64-darwin-23
   x86_64-linux
