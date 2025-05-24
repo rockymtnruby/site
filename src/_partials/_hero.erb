@@ -1,55 +1,50 @@
-
-<div id="cloud1" class="cloud">
-    Cloud 1
-</div>
-<div id="cloud2" class="cloud">
-    Cloud 2
-</div>
-<div id="cloud3" class="cloud">
-    Cloud 3
-</div>
+<div id="cloud1" class="cloud"></div>
+<div id="cloud2" class="cloud"></div>
+<div id="cloud3" class="cloud"></div>
 <div id="sky">
-    <div class="parallax__layer--back">
-        <div>
-            <h1>Rocky Mountain Ruby</h1>
-        </div>
+  <div class="parallax__layer--back">
+    <div class="text-block">
+      <h1>Rocky Mountain Ruby</h1>
+      <h3 class="mt-1">Monday, October 6th and Tuesday, October 7th</h3>
+      <p class="mt-4">A two day, single track conference in the heart of Boulder, Colorado.</p>
     </div>
+  </div>
 </div>
 <div id="mountain" class="parallax_group">
-    <div class="parallax__layer--fore layer">
-        <div>
-            <h1>Call For Proposals</h1>
-        </div>
+  <div class="parallax__layer--fore layer">
+    <div>
+      <h4 class="text-white">We're finalizing our exciting program for Rocky Mountain Ruby 2025.</h4>
     </div>
-    <div class="parallax__layer--back layer">
-        &nbsp;
-    </div>
-    <div class="parallax__layer--base layer">
-        &nbsp;
-    </div>
+  </div>
+  <div class="parallax__layer--back layer">
+    &nbsp;
+  </div>
+  <div class="parallax__layer--base layer">
+    &nbsp;
+  </div>
 </div>
 <script type="text/javascript">
     gsap.to("#cloud1", {
-    scrollTrigger: {
-        trigger: "#cloud1",
-        start: "top center",
-        toggleActions: "restart pause reverse pause",
-        // markers: true,
-        scrub: 3,
-    },
-    x: -425,
-    duration: 3,
+        scrollTrigger: {
+            trigger: "#cloud1",
+            start: "top center",
+            toggleActions: "restart pause reverse pause",
+            // markers: true,
+            scrub: 3,
+        },
+        x: -425,
+        duration: 5,
     });
     gsap.to("#cloud2", {
-    scrollTrigger: {
-        trigger: "#cloud2",
-        start: "top center",
-        toggleActions: "restart pause reverse pause",
-        // markers: true,
-        scrub: 3,
-    },
-    x: 225,
-    duration: 3,
+        scrollTrigger: {
+            trigger: "#cloud2",
+            start: "top center",
+            toggleActions: "restart pause reverse pause",
+            // markers: true,
+            scrub: 3,
+        },
+        x: 225,
+        duration: 3,
     });
     gsap.to("#cloud3", {
         scrollTrigger: {
@@ -70,22 +65,22 @@
             end: "top top",
             toggleActions: "restart pause reverse pause",
             // markers: true,
-            scrub: 1,
+            scrub: 3,
         },
         y: -100,
-        duration: 2,
+        duration: 6,
     });
     gsap.to("#mountain .parallax__layer--base", {
         scrollTrigger: {
             trigger: "#sky",
             start: "top top",
             endTrigger: "#mountain",
-            end: "top 25%",
+            end: "bottom 25%",
             toggleActions: "restart pause reverse pause",
-            markers: true,
+            // markers: true,
             scrub: 1,
         },
         y: -400,
-        duration: 2,
+        duration: 6,
     });
 </script>
