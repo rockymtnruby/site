@@ -70,22 +70,22 @@
             end: "top top",
             toggleActions: "restart pause reverse pause",
             // markers: true,
-            scrub: 3,
+            scrub: 1,
         },
         y: -100,
-        duration: 6,
+        duration: 2,
     });
     gsap.to("#mountain .parallax__layer--base", {
         scrollTrigger: {
             trigger: "#sky",
             start: "top top",
             endTrigger: "#mountain",
-            end: "bottom 25%",
+            end: "top 25%",
             toggleActions: "restart pause reverse pause",
-            // markers: true,
+            markers: true,
             scrub: 1,
         },
         y: -400,
-        duration: 6,
+        duration: 2,
     });
 </script>
