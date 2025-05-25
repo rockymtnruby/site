@@ -52,63 +52,6 @@
         </div>
     </div>
 
-    <div class="mt-12 border-t border-opacity-40 py-8 lg:mt-[60px]">
-        <div class="container">
-            <div class="-mx-4 flex flex-wrap">
-                <div class="w-full px-4 md:w-2/3 lg:w-1/2">
-                    <div class="my-1">
-                        <div
-                            class="-mx-3 flex items-center justify-center md:justify-start"
-                        >
-                            <% if site.metadata.registration_open %>
-                                <a
-                                    href="/tickets"
-                                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
-                                >
-                                    Tickets
-                                </a>
-                            <% end %>
-                            <% @site.collections.pages.resources.select { |r| r.data.top_level && r.data.enabled }.sort_by { |r| r.data.title }.each do |page| %>
-                                <a
-                                    href="<%= page.relative_url %>"
-                                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
-                                >
-                                    <%= page.data.title  %>
-                                </a>
-                            <% end %>
-                            <% @site.collections.pages.resources.select { |r| r.data.footer_only && r.data.enabled }.sort_by { |r| r.data.title }.each do |page| %>
-                                <a
-                                    href="<%= page.relative_url %>"
-                                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
-                                >
-                                    <%= page.data.title  %>
-                                </a>
-                            <% end %>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full px-4 md:w-1/3 lg:w-1/2">
-                    <div class="my-1 flex justify-center md:justify-end">
-                        <p class="text-base text-[#f3f4fe]">
-                            Presented by
-                            <a
-                                href="https://simiaruminfinitarum.com/"
-                                rel="nofollow noopner"
-                                target="_blank"
-                                class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
-                            >
-                                <img
-                                    src="/images/sponsors/si-logo.jpg"
-                                    alt="Simiarum Infinitarum"
-                                />
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div>
         <span class="absolute left-0 top-0 z-[-1]">
             <img src="/assets/images/footer/shape-1.svg" alt="" />

@@ -12,9 +12,16 @@
 </div>
 <div id="mountain" class="parallax_group">
   <div class="parallax__layer--fore layer">
-    <div>
-      <h4 class="text-white">We're finalizing our exciting program for Rocky Mountain Ruby 2025.</h4>
-    </div>
+  </div>
+  <div class="parallax__layer--back layer">
+    &nbsp;
+  </div>
+  <div class="parallax__layer--base layer">
+    &nbsp;
+  </div>
+</div>
+<div id="trees" class="parallax_group">
+  <div class="parallax__layer--fore layer">
   </div>
   <div class="parallax__layer--back layer">
     &nbsp;
@@ -75,6 +82,32 @@
             trigger: "#sky",
             start: "top top",
             endTrigger: "#mountain",
+            end: "bottom 25%",
+            toggleActions: "restart pause reverse pause",
+            // markers: true,
+            scrub: 1,
+        },
+        y: -250,
+        duration: 10,
+    });
+    gsap.to("#trees .parallax__layer--back", {
+        scrollTrigger: {
+            trigger: "#sky",
+            start: "top top",
+            endTrigger: "#trees",
+            end: "top top",
+            toggleActions: "restart pause reverse pause",
+            // markers: true,
+            scrub: 3,
+        },
+        y: -100,
+        duration: 6,
+    });
+    gsap.to("#trees .parallax__layer--base", {
+        scrollTrigger: {
+            trigger: "#sky",
+            start: "top top",
+            endTrigger: "#trees",
             end: "bottom 25%",
             toggleActions: "restart pause reverse pause",
             // markers: true,
