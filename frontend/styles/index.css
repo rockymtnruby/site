@@ -27,12 +27,29 @@ h3 {
 h4 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 42px;
+  line-height: 42px;
+  text-align: left;
+}
+
+h6 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: left;
 }
 
 p {
   font-weight: 400;
   font-size: 1rem;
+  text-align: left;
+}
+
+a {
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: left;
 }
 
 @media (max-width: 540px) {
@@ -278,12 +295,27 @@ p {
   z-index: 1000;
 }
 
-.proposals-block {
-  /*position: relative;*/
-  /*margin-x: 200px;*/
-  /*max-width: 500px;*/
+.mountain-text-box {
+  position: absolute;
+  top: 80vh; /* Adjust as needed to place over mountains */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 760px;
+  width: 90%;
+  border-radius: 16px;
+  padding: 2rem;
+  z-index: 20;
+  text-align: center;
 }
 
+@media (max-width: 540px) {
+  .mountain-text-box {
+    max-width: 100%;
+    left: 0;
+    transform: none;
+    margin: 0 1rem;
+  }
+}
 #footer {
   /*margin-top: -20vh;*/
   display: flex;
