@@ -55,7 +55,7 @@
             // markers: true,
             scrub: 3,
         },
-        x: -425,
+        x: "-20vw", // Reduced from -25vw to keep more in viewport
         duration: 5,
     });
     gsap.to("#cloud2", {
@@ -66,7 +66,7 @@
             // markers: true,
             scrub: 3,
         },
-        x: 225,
+        x: "10vw", // Reduced from 15vw to prevent overflow
         duration: 3,
     });
     gsap.to("#cloud3", {
@@ -77,9 +77,10 @@
             // markers: true,
             scrub: 1,
         },
-        x: -200,
+        x: "-15vw", // Changed from -200px to viewport units
         duration: 10,
     });
+
     gsap.to("#mountain .parallax__layer--back", {
         scrollTrigger: {
             trigger: "#sky",
@@ -90,7 +91,7 @@
             // markers: true,
             scrub: 3,
         },
-        y: -100,
+        y: "calc(-5vh - 3vw)",
         duration: 6,
     });
     gsap.to("#mountain .parallax__layer--base", {
@@ -103,7 +104,7 @@
             // markers: true,
             scrub: 1,
         },
-        y: -250,
+        y: "calc(-15vh - 5vw)",
         duration: 10,
     });
     gsap.to("#trees .parallax__layer--back", {
@@ -116,7 +117,7 @@
             // markers: true,
             scrub: 3,
         },
-        y: -100,
+        y: "calc(-7vh - 3vw)",
         duration: 6,
     });
     gsap.to("#trees .parallax__layer--base", {
