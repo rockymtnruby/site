@@ -7,10 +7,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/*html, body {*/
+/*  height: 100%;*/
+/*}*/
+
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*min-height: 100vh;*/
 }
+
+/*main {*/
+/*    flex: 1;*/
+/*}*/
 
 h1 {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -281,19 +292,18 @@ a {
   position: relative;
   margin-top: -40px;
   height: 600px; /* fallback for older browsers */
-  height: 120vh;
+  height: 100vh;
   background-size: cover;
   background-image: url('../../src/assets/images/hero/trees-light.svg');
 }
 
 #trees .parallax__layer--base {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   top: -50vh;
   background-size: cover;
   background-image: url('../../src/assets/images/hero/trees-dark.svg');
 }
-
 
 #trees .parallax__layer--fore {
   position: relative;
@@ -323,20 +333,21 @@ a {
     margin: 0 1rem;
   }
 }
-/*footer {*/
-/*  !*margin-top: -20vh;*!*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: center;*/
-/*  align-items: flex-start;*/
-/*  padding: 40px 115px;*/
-/*  gap: 36px;*/
 
-/*  position: absolute;*/
-/*  width: 1440px;*/
-/*  height: 382px;*/
-/*  left: calc(50% - 1440px/2);*/
-/*  bottom: 0px;*/
+footer {
+  position: relative;
+  height: 410px;
+  width: 100%;
+  z-index: 30;
+  /*margin-bottom: 0px;*/
+  /*left: 0;*/
+}
 
-/*  background: #100747;*/
-/*}*/
+footer .container {
+  margin-left: auto;
+  margin-right: auto;
+  /*max-width: 1200px; !* or your site's main container width *!*/
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
