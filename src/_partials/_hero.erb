@@ -1,4 +1,4 @@
-<div class="clouds-wrapper" style="position: relative; width: 100vw; overflow-x: visible;">
+<div class="clouds-wrapper" style="position: absolute; width: 100%; overflow-x: visible; ">
   <div id="cloud1" class="cloud"></div>
   <div id="cloud2" class="cloud"></div>
   <div id="cloud3" class="cloud"></div>
@@ -72,13 +72,13 @@
     gsap.to("#cloud3", {
         scrollTrigger: {
             trigger: "#cloud3",
-            start: "top 100px",
+            start: "top center",
             toggleActions: "restart pause reverse pause",
             // markers: true,
             scrub: 1,
         },
-        x: -400,
-        duration: 6,
+        x: -200,
+        duration: 10,
     });
     gsap.to("#mountain .parallax__layer--back", {
         scrollTrigger: {
