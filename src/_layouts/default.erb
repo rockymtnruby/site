@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth" style="height: 100%">
-    <head>
-        <%= render "head", metadata: site.metadata, title: data.title %>
-        <script src='https://js.tito.io/v2' async></script>
-    </head>
-    <body style="height: 100%">
-        <%= render Shared::Navbar.new(site: site, metadata: site.metadata, resource: resource) %>
-        <%= yield %>
-        <%= render 'footer', metadata: site.metadata %>
-    </body>
+<head>
+  <%= render "head", metadata: site.metadata, title: data.title %>
+  <script src='https://js.tito.io/v2' async></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script type="text/javascript">
+      gsap.registerPlugin(ScrollTrigger);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+<body style="height: 100%">
+<%#= render Shared::Navbar.new(site: site, metadata: site.metadata, resource: resource) %>
+<%= yield %>
+<%= render 'footer', metadata: site.metadata %>
+</body>
 </html>

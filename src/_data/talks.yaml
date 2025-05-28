@@ -22,7 +22,7 @@
       - link: https://www.linkedin.com/in/nonconstant/
         icon: linkedin
       - link: https://twitter.com/inazarova
-        icon: twitter
+        icon: x
 - title: "Closing the Gap: How to Leap from Bootcamp to Job"
   description: >-
     Been to a bootcamp but still trying to land that first real job? Perhaps you've landed an apprenticeship or entry-level job but anxious to move up?
@@ -92,7 +92,7 @@
       - link: https://dev.to/@craigbuchek
         icon: blog
       - link: https://twitter.com/craigbuchek
-        icon: twitter
+        icon: x
       - link: https://www.linkedin.com/in/craigbuchek/
         icon: linkedin
 - title: Attraction Mailbox - Why I love Action Mailbox
@@ -117,7 +117,7 @@
       - link: https://www.linkedin.com/in/cody-norman-26832027/
         icon: linkedin
       - link: https://twitter.com/cnorm35
-        icon: twitter
+        icon: x
 
 - title: Catching Waves with Time-Series Data
   description: >-
@@ -161,7 +161,7 @@
       - link: https://www.linkedin.com/in/marco-roth/
         icon: linkedin
       - link: https://twitter.com/marcoroth_
-        icon: twitter
+        icon: x
       - link: https://marcoroth.dev/blog
         icon: blog
       - link: https://marcoroth.dev/
@@ -179,7 +179,7 @@
       - link: https://www.linkedin.com/in/svyatoslav-kryukov
         icon: linkedin
       - link: https://twitter.com/skryukov_dev
-        icon: twitter
+        icon: x
 - title: "DragonRuby: Lessons Learned from building a commercial game engine"
   description: >-
     DragonRuby Game Toolkit recently celebrated its 5 year anniversary. Over that time it’s become one of the highest rated and most popular game engines on Itch.io. Amir will share lessons he learned over that period: everything from the low level architecture, to the more human aspects of creating a community around Ruby and the joy its brought to new devs.
@@ -196,7 +196,7 @@
       - link: https://www.linkedin.com/in/amirrajan/
         icon: linkedin
       - link: https://twitter.com/amirrajan
-        icon: twitter
+        icon: x
 - title: "Building AI agents in Ruby"
   description: >-
     The Coatue AI report is putting AI models at the centerpiece of all modern tech stacks going forward that Application 
@@ -221,7 +221,7 @@
       - link: https://www.linkedin.com/in/andreibondarev/
         icon: linkedin
       - link: https://twitter.com/rushing_andrei
-        icon: twitter
+        icon: x
 - title: "Empowering the Individual Developer: Ruby on AI"
   description: >-
     Integrating AI with Ruby can transform a solo developer's workflow into an incredibly potent force, capable of competing at an unprecedented scale (without needing to learn Python!)
@@ -244,7 +244,7 @@
       - link: https://www.linkedin.com/in/obiefernandez/
         icon: linkedin
       - link: https://twitter.com/obie
-        icon: twitter
+        icon: x
 - title: "New design pattern for Shifting Constants Away from your Rails business logic"
   description: >-
     Explore a new pattern that solves the challenges of managing constants in Rails applications. Learn how this innovative approach simplifies handling constants, improving code readability and maintainability. The presentation will demonstrate current approaches, their problems in details and this pattern with examples applicable to any Rails project.

@@ -2,7 +2,7 @@
 layout: default
 ---
 <% site.metadata.main_page.sections.each do |section| %>
-    <% if section.enabled %>
-        <%= render section.name, metadata: site.metadata %>
-    <% end %>
+  <% if section.enabled %>
+    <%= render section.name, metadata: site.metadata %>
+  <% end %>
 <% end %>

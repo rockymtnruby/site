@@ -1,3 +1,10 @@
+- name: Cisco Meraki
+  logo: Cisco_Meraki_Logo_Color.png
+  footer_logo: Cisco_Meraki_Logo_White.png
+  level: ruby
+  url: https://meraki.cisco.com/
+  enabled: true
+  footer: true
 - name: Simiarum Infinitarum
   logo: si-logo.jpg
   level: ruby
@@ -8,22 +15,22 @@
   footer_logo: honeybadger_logo_white.svg
   level: sapphire
   url: https://www.honeybadger.io/
-  enabled: true
-  footer: true
+  enabled: false
+  footer: false
 - name: AppSignal
   logo: Appsignal-original-azure.png
   footer_logo: Appsignal-original-white.png
   level: emerald
   url: https://www.appsignal.com/
-  enabled: true
-  footer: true
+  enabled: false
+  footer: false
 - name: DNSimple
   logo: dnsimple-logo-blue.png
   footer_logo: dnsimple-logo-light.png
   level: emerald
   url: https://dnsimple.com/
-  enabled: true
-  footer: true
+  enabled: false
+  footer: false
 - name: Flagrant
   logo: FlagrantLogo_Color.svg
   footer_logo: FlagrantLogo_White.svg
@@ -34,7 +41,7 @@
   logo: remote-ruby.jpeg
   level: podcast
   url: https://www.remoteruby.com
-  enabled: true
+  enabled: false
 - name: The Bike Shed
   logo: the-bike-shed.png
   level: podcast
