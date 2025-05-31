@@ -188,12 +188,8 @@ a {
   background-image: url('data:image/svg+xml,<svg width="700" height="283" viewBox="0 0 700 283" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M346 0C409.141 0 462.516 41.8008 479.97 99.2383C494.62 89.6047 512.156 84 531 84C582.362 84 624 125.638 624 177C624 191.123 620.851 204.511 615.218 216.5H634C670.451 216.5 700 246.049 700 282.5H0C0 246.049 29.5492 216.5 66 216.5H71.7129C74.2577 196.074 83.5312 176.947 98.2393 162.239C115.68 144.798 139.335 135 164 135C178.765 135 193.167 138.512 206.092 145.071C206.032 143.388 206 141.698 206 140C206 62.6801 268.68 0 346 0Z" fill="url(%23paint0_linear_478_1452)"/><defs><linearGradient id="paint0_linear_478_1452" x1="350" y1="0" x2="350" y2="282.5" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="%23E9E5FF"/></linearGradient></defs></svg>');
   max-width: 700px; /* prevents getting too large */
   background-size: 100% 100%; /* ensures the SVG scales properly */
-}
-
-@media(min-width: 540px) {
-  #cloud2 {
-    right: -5vw; /* was -150px, reduced to prevent overflow */
-  }
+  overflow-x: hidden;
+  padding-right: -10px;
 }
 
 #cloud3 {
@@ -229,12 +225,6 @@ a {
   padding-top: 100px;
   position: relative;
   z-index: 100;
-}
-
-@media (min-width: 540px) {
-  #sky .text-block {
-    padding-top: 200px;
-  }
 }
 
 #mountain {
@@ -330,20 +320,55 @@ footer .container {
 }
 
 @media (min-width: 540px) {
-  #mountain .parallax__layer--back {
-    height: 160vh;
+  #sky {
+    height: 700px;
   }
 
-  #mountain .parallax__layer--base {
-     height: 100vh;
+  #sky .text-block {
+    padding-top: 160px;
+  }
+
+  #cloud2 {
+    /*margin-right: -15vw; !* was -150px, reduced to prevent overflow *!*/
   }
 
   .mountain-text-box {
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 760px;
-    width: 90%;
-    margin: 0 1rem;
+    top: 90vh;
+  }
+
+  #mountain {
+    margin-top: -300px;
+    height: 160vh;
+  }
+
+  #mountain .parallax__layer--back {
+    height: 160vh;
+    margin-top: calc(-15vh - 5vw);
+  }
+
+  #mountain .parallax__layer--base {
+    height: 100vh;
+    top: -120vh;
+  }
+
+  #trees {
+    height: 120vh;
+  }
+
+  #trees .parallax__layer--back {
+    margin-top: -500px;
+    height: 100vh;
+  }
+
+  #trees .parallax__layer--base {
+    height: 100vh;
+    margin-top: -60px;
+  }
+}
+
+@media (min-width: 768px) {
+  #sky .text-block {
+    padding-top: 160px;
   }
 
   footer {
