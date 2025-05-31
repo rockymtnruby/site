@@ -376,6 +376,40 @@ footer .container {
   }
 }
 
+@media (min-width: 950px) {
+  #cloud3 {
+    top: 32vw; /* Adjusted for larger screens */
+    left: 25vw; /* Adjusted to prevent overflow */
+  }
+
+  .mountain-text-box {
+    top: 70vh;
+  }
+
+  #mountain {
+    margin-top: -400px;
+  }
+
+  #mountain .parallax__layer--base {
+    height: 130vh;
+  }
+
+  #trees {
+    height: 100vh;
+  }
+
+  #trees .parallax__layer--back {
+    margin-top: -1000px;
+    height: 100vh;
+  }
+
+  #trees .parallax__layer--base {
+    height: 80vh;
+    margin-top: -280px;
+  }
+
+}
+
 @media (min-width: 1500px) {
   #cloud1 {
     top: 1.5vw;
@@ -391,6 +425,6 @@ footer .container {
   }
 
   .mountain-text-box {
-    top: 90vh;
+    top: 70vh;
   }
 }
