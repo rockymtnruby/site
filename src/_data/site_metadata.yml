@@ -34,7 +34,7 @@ main_page:
       navbar: true
       enabled: false
     - name: location
-      enabled: false
+      enabled: true
     - name: contact
       enabled: false
     - name: faq
