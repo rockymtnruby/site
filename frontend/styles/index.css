@@ -205,7 +205,19 @@ a {
 #sky {
   z-index: 3; /* slide under groups 1 and 3 */
   width: 100%;
-  /*transform: scale(1.2); !* Zoom in *!*/
+  background: #998aff;
+  background: linear-gradient(
+    180deg,
+    rgba(153, 138, 255, 1) 0%,
+    rgba(255, 235, 229, 1) 95%
+  );
+}
+
+#sky .front-mountains {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin-bottom: -3px;
 }
 
 #sky .parallax__layer--back {
@@ -213,9 +225,9 @@ a {
   height: 80vh;
   background: #998aff;
   background: linear-gradient(
-          180deg,
-          rgba(153, 138, 255, 1) 0%,
-          rgba(255, 235, 229, 1) 95%
+    180deg,
+    rgba(153, 138, 255, 1) 0%,
+    rgba(255, 235, 229, 1) 95%
   );
 }
 
@@ -227,46 +239,41 @@ a {
   z-index: 100;
 }
 
-#mountain {
+.mountain-text-section {
   position: relative;
-  z-index: 5;
-  height: 160vh;
-  transform-origin: center bottom;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  overflow: visible;
+  padding: 100px 120px 400px;
+  background: #251682;
+  background: linear-gradient(
+    180deg,
+    #251682 0%,
+    #1D1266 95%
+  );
 }
 
-#mountain .parallax__layer--back {
-  position: relative;
-  margin-top: calc(-15vh - 10vw);
-  margin-left: -1px;
-  height: 160vh;
+.mountain-text-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../src/assets/images/hero/front-mountains.svg");
   background-size: cover;
-  background-image: url('../../src/assets/images/hero/back-mountains.svg');
 }
 
-#mountain .parallax__layer--base {
+.mountain-text-content {
   position: relative;
-  height: 120vh;
-  top: -120vh;
-  background-size: cover;
-  background-image: url('../../src/assets/images/hero/front-mountains.svg');
-}
-
-#mountain .parallax__layer--fore {
-  position: relative;
-  top: 10vh;
-  left: 0;
-  z-index: 1000;
+  width: 100%;
+  max-width: 1110px;
+  top: 10%;
+  text-align: center;
 }
 
 #trees {
   position: relative;
   z-index: 5;
-  height: 100vh;
-  transform-origin: center bottom;
   width: 100%;
-  overflow: visible;
 }
 
 #trees .parallax__layer--back {
@@ -274,7 +281,7 @@ a {
   margin-top: -380px;
   height: 100vh;
   background-size: cover;
-  background-image: url('../../src/assets/images/hero/trees-light.svg');
+  background-image: url("../../src/assets/images/hero/trees-light.svg");
 }
 
 #trees .parallax__layer--base {
@@ -282,27 +289,132 @@ a {
   height: 100vh;
   margin-top: -120px;
   background-size: cover;
-  background-image: url('../../src/assets/images/hero/trees-dark.svg');
+  background-image: url("../../src/assets/images/hero/trees-dark.svg");
 }
 
 #trees .parallax__layer--fore {
   position: relative;
   top: 10vh;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
 }
 
-.mountain-text-box {
+.why-rmr {
+  position: relative;
+  z-index: 80;
+  color: #fff;
+  margin-top: 0;
+}
+
+.why-rmr-content {
   position: absolute;
-  top: 80vh; /* Adjust as needed to place over mountains */
-  max-width: 100%;
-  left: 0;
-  transform: none;
-  margin: 0 1rem;
-  border-radius: 16px;
-  padding: 2rem;
-  z-index: 20;
-  text-align: center;
+  top: 80px;
+  left: 18%;
+  max-width: 245px;
+}
+
+.why-rmr-content h1 {
+  line-height: 1.1;
+}
+
+.features {
+  padding: 200px 115px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.features div {
+  background-color: #001C19;
+  padding: 54px;
+  color: #fff;
+}
+
+.features h3 {
+  margin-bottom: 10px;
+}
+
+.features p {
+  font-size: 0.875rem;
+  line-height: 2;
+  max-width: 300px;
+}
+
+.speakers {
+  padding: 20px 115px;
+  color: #fff;
+  background: #00221d;
+  background: linear-gradient(
+    180deg,
+    #00362f 0%,
+    #00221d 95%
+  );
+}
+
+.speakers header {
+  margin-bottom: 40px;
+  max-width: 460px;
+}
+
+.speakers header h1 span {
+  display: block;
+  font-size: 1.3rem;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.speakers header h3 {
+  font-weight: 400;
+  line-height: 1.25;
+  font-size: 1.4rem;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.speakers-grid .speaker {
+  max-width: 250px;
+}
+
+.speakers-grid .speaker h4 {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.speakers-grid .speaker p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.speakers-grid .speaker img {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.speaker-footer {
+  background: #fdece8;
+  background: linear-gradient(
+    180deg,
+    #fdece8 0%,
+    #f9eeef 95%
+  );
+}
+
+#location {
+  background: #fdece8;
+  background: linear-gradient(
+    180deg,
+    #f9eeef 0%,
+    #fff 95%
+  );
 }
 
 footer {
@@ -319,21 +431,10 @@ footer .container {
   padding-right: 1rem;
 }
 
-@media (min-width: 540px) {
-  #sky {
-    height: 700px;
-  }
-
-  #sky .text-block {
-    padding-top: 160px;
-  }
+@media (min-width: 640px) {
 
   #cloud2 {
     /*margin-right: -15vw; !* was -150px, reduced to prevent overflow *!*/
-  }
-
-  .mountain-text-box {
-    top: 90vh;
   }
 
   #mountain {
@@ -382,10 +483,6 @@ footer .container {
     left: 25vw; /* Adjusted to prevent overflow */
   }
 
-  .mountain-text-box {
-    top: 70vh;
-  }
-
   #mountain {
     margin-top: -400px;
   }
@@ -399,13 +496,13 @@ footer .container {
   }
 
   #trees .parallax__layer--back {
-    margin-top: -1000px;
+    margin-top: -600px;
     height: 100vh;
   }
 
   #trees .parallax__layer--base {
     height: 80vh;
-    margin-top: -280px;
+    margin-top: -400px;
   }
 }
 

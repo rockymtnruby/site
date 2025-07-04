@@ -40,7 +40,7 @@ main_page:
     - name: faq
       label: FAQ
       navbar: true
-      enabled: false
+      enabled: true
     - name: sponsors
       label: Sponsors
       enabled: false
