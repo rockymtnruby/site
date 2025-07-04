@@ -3,7 +3,21 @@
   footer_logo: Cisco_Meraki_Logo_White.png
   level: ruby
   url: https://meraki.cisco.com/
-  enabled: false
+  enabled: true
+  footer: true
+- name: Gusto
+  logo: Gusto_logo_color.svg
+  footer_logo: Gusto_logo_white.svg
+  level: sapphire
+  url: https://gusto.com
+  enabled: true
+  footer: true
+- name: TypeSense
+  logo: typesense_logo.svg
+  footer_logo: typesense_white.svg
+  level: emerald
+  url: https://typesense.org
+  enabled: true
   footer: true
 - name: Gusto
   logo: Gusto_logo_color.svg
@@ -29,21 +43,21 @@
   footer_logo: honeybadger_logo_white.svg
   level: sapphire
   url: https://www.honeybadger.io/
-  enabled: true
+  enabled: false
   footer: false
 - name: AppSignal
   logo: Appsignal-original-azure.png
   footer_logo: Appsignal-original-white.png
   level: emerald
   url: https://www.appsignal.com/
-  enabled: true
+  enabled: false
   footer: false
 - name: DNSimple
   logo: dnsimple-logo-blue.png
   footer_logo: dnsimple-logo-light.png
   level: emerald
   url: https://dnsimple.com/
-  enabled: true
+  enabled: false
   footer: false
 - name: Flagrant
   logo: FlagrantLogo_Color.svg
@@ -55,7 +69,7 @@
   logo: remote-ruby.jpeg
   level: podcast
   url: https://www.remoteruby.com
-  enabled: true
+  enabled: false
 - name: The Bike Shed
   logo: the-bike-shed.png
   level: podcast
