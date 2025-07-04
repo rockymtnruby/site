@@ -317,7 +317,7 @@ a {
   line-height: 1.1;
 }
 
-.features {
+.features-grid, .faq-grid {
   padding: 200px 115px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -328,20 +328,35 @@ a {
   }
 }
 
-.features div {
+.faq-grid {
+  padding: 40px 0 400px;
+}
+
+.features-grid .feature-card {
   background-color: #001C19;
   padding: 54px;
   color: #fff;
 }
 
-.features h3 {
+.faq-grid .faq {
+  background-color: #fff;
+  padding: 54px;
+  color: #000;
+}
+
+.features-grid h3, .faq-grid h3 {
+  font-family: "Bricolage Grotesque", sans-serif;
   margin-bottom: 10px;
 }
 
-.features p {
+.features-grid p, .faq-grid p {
   font-size: 0.875rem;
   line-height: 2;
   max-width: 300px;
+}
+
+.features-grid p, .faq-grid p {
+  max-width: 100%;
 }
 
 .speakers {
@@ -415,6 +430,19 @@ a {
     #f9eeef 0%,
     #fff 95%
   );
+}
+
+.faq-content {
+  background: #00443d;
+  background: linear-gradient(
+    180deg,
+    #00443d 0%,
+    #001C19 95%
+  );
+}
+
+.faq-content header {
+  color: #fff;
 }
 
 footer {
