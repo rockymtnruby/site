@@ -466,11 +466,38 @@ a {
   );
 }
 
+#sponsors {
+  position: relative;
+  padding-bottom: 300px;
+  background: #211473;
+  background: linear-gradient(
+    180deg,
+    #211473 0%,
+    #1e1466 95%
+  );
+}
+
 .sponsors-sky .mountain {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+#sponsors .secondary-sponsors {
+  flex-basis: calc(50% - 10px);
+}
+
+#sponsors::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../src/assets/images/sponsors/speckles-bottom.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 
 footer {
