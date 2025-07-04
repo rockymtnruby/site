@@ -1,19 +1,19 @@
+<div class="sponsors-sky">
+    <div class="clouds-wrapper" style="position: absolute; width: 100%; overflow-x: visible; ">
+        <div id="cloud1" class="cloud"></div>
+        <div id="cloud2" class="cloud"></div>
+        <div id="cloud3" class="cloud"></div>
+    </div>
+    <img src="/assets/images/sponsors/header-mountain.svg" class="mountain" />
+</div>
 <section id="sponsors" class="pt-20 md:pt-[120px]">
     <div class="container px-4">
-        <div class="flex flex-wrap">
-            <div class="mx-4 w-full">
-                <div class="mx-auto mb-[60px] text-center lg:mb-10">
-                    <span class="mb-2 block text-lg font-semibold text-primary">
-                        Sponsors
-                    </span>
-                    <p
-                        class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
-                    >
-                        Rocky Mountain Ruby wouldn't be possible without the support of our generous sponsors.
-                    </p>
-                </div>
-            </div>
-        </div>
+        <header>
+            <h1>Sponsors</h1>
+            <p>
+                Rocky Mountain Ruby wouldn't be possible without the support of our generous sponsors.
+            </p>
+        <header>
         <% all_sponsors = site.data.sponsors.select {|sponsor| sponsor.enabled } %>
         <% site.data.sponsor_levels.each do |level| %>
             <% sponsors = all_sponsors.select {|sponsor| sponsor.level == level.name } %>

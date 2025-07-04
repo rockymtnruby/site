@@ -329,7 +329,7 @@ a {
 }
 
 .faq-grid {
-  padding: 40px 0 400px;
+  padding: 40px 0 0;
 }
 
 .features-grid .feature-card {
@@ -432,7 +432,9 @@ a {
   );
 }
 
-.faq-content {
+#faq {
+  position: relative;
+  padding-bottom: 400px;
   background: #00443d;
   background: linear-gradient(
     180deg,
@@ -441,8 +443,34 @@ a {
   );
 }
 
+#faq .bottom-trees {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
 .faq-content header {
   color: #fff;
+}
+
+.sponsors-sky {
+  position: relative;
+  min-height: 1600px;
+  background: #478c81;
+  background: linear-gradient(
+    180deg,
+    #478c81 0%,
+    #d4d5cd 95%
+  );
+}
+
+.sponsors-sky .mountain {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 footer {

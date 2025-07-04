@@ -43,7 +43,7 @@ main_page:
       enabled: true
     - name: sponsors
       label: Sponsors
-      enabled: false
+      enabled: true
       navbar: false
     - name: tickets
       enabled: false
