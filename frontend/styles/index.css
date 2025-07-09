@@ -15,13 +15,19 @@ body {
 h1 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 h3 {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 h4 {
@@ -52,15 +58,30 @@ a {
   text-align: left;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.875;
+  }
+}
+
+@media (min-width: 1024px) {
   h1 {
     font-size: 3rem;
   }
+  h2 {
+    font-size: 3.25rem;
+  }
   h3 {
     font-size: 1.5rem;
-  }
-  h4 {
-    /*font-size: 2.5rem;*/
   }
   p {
     font-size: 1rem;
@@ -244,13 +265,17 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 100px 120px 400px;
+  z-index: 5;
+  padding: 80px 20px 400px;
   background: #251682;
   background: linear-gradient(
     180deg,
     #251682 0%,
     #1D1266 95%
   );
+  @media screen and (min-width: 1024px) {
+    padding: 100px 120px 400px;
+  }
 }
 
 .mountain-text-section::before {
@@ -265,7 +290,7 @@ a {
 .mountain-text-content {
   position: relative;
   width: 100%;
-  max-width: 1110px;
+  max-width: 870px;
   top: 10%;
   text-align: center;
 }
@@ -278,15 +303,15 @@ a {
 
 #trees .parallax__layer--back {
   position: relative;
-  margin-top: -380px;
-  height: 100vh;
+  margin-top: -500px;
+  height: 600px;
   background-size: cover;
   background-image: url("../../src/assets/images/hero/trees-light.svg");
 }
 
 #trees .parallax__layer--base {
   position: relative;
-  height: 100vh;
+  height: 600px;
   margin-top: -120px;
   background-size: cover;
   background-image: url("../../src/assets/images/hero/trees-dark.svg");
@@ -303,14 +328,30 @@ a {
   position: relative;
   z-index: 80;
   color: #fff;
-  margin-top: 0;
+  padding-top: 260px;
+  background-color: #003933;
+  margin-top: -520px;
+  @media screen and (min-width: 640px) {
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: -200px;
+    padding-top: 0px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 .why-rmr-content {
   position: absolute;
-  top: 80px;
-  left: 18%;
+  top: 40px;
+  left: 16%;
   max-width: 245px;
+  @media screen and (min-width: 1024px) {
+    top: 80px;
+  }
 }
 
 .why-rmr-content h1 {
@@ -318,13 +359,15 @@ a {
 }
 
 .features-grid, .faq-grid {
-  padding: 200px 115px;
+  padding: 40px 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
   flex-wrap: wrap;
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
+  @media screen and (min-width: 1024px) {
+    padding: 200px 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -359,8 +402,12 @@ a {
   max-width: 100%;
 }
 
+.features {
+  background-color: white;
+}
+
 .speakers {
-  padding: 20px 115px;
+  padding: 20px 0;
   color: #fff;
   background: #00221d;
   background: linear-gradient(
@@ -392,10 +439,6 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
-}
-
-.speakers-grid .speaker {
-  max-width: 250px;
 }
 
 .speakers-grid .speaker h4 {
@@ -434,13 +477,7 @@ a {
 
 #faq {
   position: relative;
-  padding-bottom: 400px;
-  background: #00443d;
-  background: linear-gradient(
-    180deg,
-    #00443d 0%,
-    #001C19 95%
-  );
+  background-color: white;
 }
 
 #faq .bottom-trees {
@@ -451,30 +488,56 @@ a {
   height: auto;
 }
 
+.faq-content {
+  padding-bottom: 100px;
+  background: #00443d;
+  background: linear-gradient(
+    180deg,
+    #00443d 0%,
+    #001C19 95%
+  );
+  @media screen and (min-width: 640px) {
+    padding-bottom: 160px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 280px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 400px;
+  }
+}
+
 .faq-content header {
   color: #fff;
 }
 
 .sponsors-sky {
   position: relative;
-  min-height: 1600px;
+  min-height: 400px;
   background: #478c81;
   background: linear-gradient(
     180deg,
     #478c81 0%,
     #d4d5cd 95%
   );
+  @media screen and (min-width: 1024px) {
+    min-height: 1100px;
+  }
 }
 
 #sponsors {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
   background: #211473;
   background: linear-gradient(
     180deg,
     #211473 0%,
     #1e1466 95%
   );
+  z-index: 5;
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 300px;
+  }
 }
 
 .sponsors-sky .mountain {
@@ -482,6 +545,7 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 5;
 }
 
 #sponsors .secondary-sponsors {
@@ -540,13 +604,13 @@ footer .container {
   }
 
   #trees .parallax__layer--back {
-    margin-top: -500px;
-    height: 100vh;
+    margin-top: -460px;
+    height: 800px;
   }
 
   #trees .parallax__layer--base {
-    height: 100vh;
-    margin-top: -60px;
+    height: 800px;
+    margin-top: -160px;
   }
 }
 
