@@ -154,28 +154,37 @@ a {
 }
 
 .sponsor-ruby {
-  @apply max-w-[350px];
+  @apply max-w-[400px];
+  & img {
+    @apply w-[400px];
+  }
 }
 
 .sponsor-sapphire {
-  @apply max-w-[325px];
+  @apply max-w-[300px];
   & img {
-    @apply w-[325px];
+    @apply h-[80px];
   }
 }
 
 .sponsor-emerald {
-  @apply max-w-[275px];
+  @apply max-w-[300px];
+  & img {
+    @apply h-[120px];
+  }
 }
 
 .sponsor-community {
   @apply max-w-[200px];
+  & img {
+    @apply h-[80px];
+  }
 }
 
 .sponsor-podcast {
-  @apply max-w-[100px];
+  @apply max-w-[75px];
   & img {
-    @apply max-h-[50px];
+    @apply max-w-[75px];
   }
 }
 
@@ -561,6 +570,10 @@ a {
 
 #sponsors .secondary-sponsors {
   flex-basis: calc(50% - 10px);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 
 #sponsors::before {
