@@ -5,6 +5,34 @@
   url: https://meraki.cisco.com/
   enabled: true
   footer: true
+- name: Gusto
+  logo: Gusto_logo_color.svg
+  footer_logo: Gusto_logo_white.svg
+  level: sapphire
+  url: https://gusto.com
+  enabled: true
+  footer: true
+- name: TypeSense
+  logo: typesense_logo.svg
+  footer_logo: typesense_white.svg
+  level: emerald
+  url: https://typesense.org
+  enabled: true
+  footer: true
+- name: Gusto
+  logo: Gusto_logo_color.svg
+  footer_logo: Gusto_logo_white.svg
+  level: sapphire
+  url: https://gusto.com
+  enabled: true
+  footer: true
+- name: TypeSense
+  logo: typesense_logo.svg
+  footer_logo: typesense_white.svg
+  level: emerald
+  url: https://typesense.org
+  enabled: true
+  footer: true
 - name: Simiarum Infinitarum
   logo: si-logo.jpg
   level: ruby

@@ -1,9 +1,16 @@
+<% width, max_width = case sponsor.level
+                      when 'ruby' then ['200px', '200px']
+                      when 'sapphire' then ['100px', '100px']
+                      else ['80px', '80px']
+                      end %>
+
 <li>
     <a
         href="<%= sponsor.url %>"
         rel="nofollow noopner"
         target="_blank"
-        class="mb-6 mr-5 block w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
+        class="mb-6 mr-5 block"
+        style="max-width: <%= max_width %>; width: <%= width %>;"
     >
         <img
             src="/images/sponsors/<%= sponsor.footer_logo ? sponsor.footer_logo : sponsor.logo %>"

@@ -1,28 +1,31 @@
-<section id="sponsors" class="pt-20 md:pt-[120px]">
-    <div class="container px-4">
-        <div class="flex flex-wrap">
-            <div class="mx-4 w-full">
-                <div class="mx-auto mb-[60px] text-center lg:mb-10">
-                    <span class="mb-2 block text-lg font-semibold text-primary">
-                        Sponsors
-                    </span>
-                    <p
-                        class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
-                    >
-                        Rocky Mountain Ruby wouldn't be possible without the support of our generous sponsors.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <% all_sponsors = site.data.sponsors.select {|sponsor| sponsor.enabled } %>
-        <% site.data.sponsor_levels.each do |level| %>
-            <% sponsors = all_sponsors.select {|sponsor| sponsor.level == level.name } %>
-            <% unless sponsors.empty? %>
-                <div class="flex flex-wrap mb-4">
-                    <div class="mx-4 w-full">
+<div class="sponsors-sky">
+    <div class="clouds-wrapper" style="position: absolute; width: 100%; overflow-x: visible; ">
+        <div id="cloud1" class="cloud"></div>
+        <div id="cloud2" class="cloud"></div>
+        <div id="cloud3" class="cloud"></div>
+    </div>
+    <img src="/assets/images/sponsors/header-mountain.svg" class="mountain" />
+</div>
+<section id="sponsors">
+    <div class="container">
+        <header class="max-w-[600px] text-white">
+            <h1>Sponsors</h1>
+            <h3 class="leading-tight">
+                Rocky Mountain Ruby wouldn't be possible without the support of our generous sponsors.
+            </h3>
+            <p class="text-sm font-light mt-[10px]">
+                Interested in supporting Rocky Mountain Ruby? Find out about <a href="/sponsorship" class="font-bold hover:text-primary" target="_blank">sponsorship</a>.
+            </p>
+        </header>
+        <div class="flex flex-wrap relative z-20 gap-[20px] py-[40px]">
+            <% all_sponsors = site.data.sponsors.select {|sponsor| sponsor.enabled } %>
+            <% site.data.sponsor_levels.each do |level| %>
+                <% sponsors = all_sponsors.select {|sponsor| sponsor.level == level.name } %>
+                <% unless sponsors.empty? %>
+                    <div class="bg-white items-center <%= %w[ruby emerald sapphire].include?(level.name) ? "w-full" : "secondary-sponsors" %>">
                         <div class="wow fadeInUp" data-wow-delay=".2s">
                             <div class="ud-title my-4">
-                                <h4 class="text-center font-semibold text-lg text-<%= level.name -%> mb-8"><%= level.title %> Sponsors</h4>
+                                <h3 class="text-center font-bold mb-8"><%= level.title %> Sponsors</h3>
                             </div>
                             <div class="ud-brands-logo flex flex-wrap items-center justify-center">
                                 <% sponsors.each do |sponsor| %>
@@ -36,7 +39,6 @@
                                             <img
                                                 src="/images/sponsors/<%= sponsor.logo %>"
                                                 alt="<%= sponsor.name %>"
-                                                class="grayscale duration-300 hover:filter-none"
                                             />
                                         </a>
                                     </div>
@@ -44,19 +46,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                <% end %>
             <% end %>
-        <% end %>
-    </div>
-    <div class="flex flex-wrap">
-        <div class="mx-4 w-full">
-            <div class="mx-auto mb-[60px] text-center lg:mb-10">
-                <p
-                    class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
-                >
-                    Interested in supporting Rocky Mountain Ruby? Find out about <a href="/sponsorship" class="text-dark hover:text-primary" target="_blank">sponsorship</a>.
-                </p>
-            </div>
         </div>
     </div>
 </section>
