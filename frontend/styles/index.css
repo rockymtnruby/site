@@ -551,17 +551,6 @@ a {
   }
 }
 
-#sponsors {
-  position: relative;
-  padding-bottom: 300px;
-  background: #211473;
-  background: linear-gradient(
-    180deg,
-    #211473 0%,
-    #1e1466 95%
-  );
-}
-
 .sponsors-sky .mountain {
   position: absolute;
   left: 0;
