@@ -579,10 +579,6 @@ a {
   z-index: 10;
 }
 
-#sponsors .secondary-sponsors {
-  flex-basis: calc(50% - 10px);
-}
-
 #sponsors::before {
   content: "";
   position: absolute;
