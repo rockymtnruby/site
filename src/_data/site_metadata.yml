@@ -34,16 +34,16 @@ main_page:
       navbar: true
       enabled: false
     - name: location
-      enabled: false
+      enabled: true
     - name: contact
       enabled: false
     - name: faq
       label: FAQ
       navbar: true
-      enabled: false
+      enabled: true
     - name: sponsors
       label: Sponsors
-      enabled: false
+      enabled: true
       navbar: false
     - name: tickets
       enabled: false

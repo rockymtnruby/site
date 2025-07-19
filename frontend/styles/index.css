@@ -15,21 +15,26 @@ body {
 h1 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 h3 {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 h4 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.25rem;
   line-height: 42px;
-  text-align: left;
 }
 
 h6 {
@@ -52,15 +57,33 @@ a {
   text-align: left;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
   h1 {
     font-size: 3rem;
   }
+  h2 {
+    font-size: 3.25rem;
+  }
   h3 {
     font-size: 1.5rem;
-  }
-  h4 {
-    /*font-size: 2.5rem;*/
   }
   p {
     font-size: 1rem;
@@ -100,7 +123,7 @@ a {
 }
 
 .sticky .signUpBtn {
-  @apply bg-primary text-white hover:bg-dark hover:text-white;
+  @apply bg-[#2B1A99] text-white hover:bg-dark hover:text-white;
 }
 
 .navbarTogglerActive > span:nth-child(1) {
@@ -133,28 +156,37 @@ a {
 }
 
 .sponsor-ruby {
-  @apply max-w-[350px];
+  @apply max-w-[400px];
+  & img {
+    @apply w-[400px];
+  }
 }
 
 .sponsor-sapphire {
-  @apply max-w-[325px];
+  @apply max-w-[300px];
   & img {
-    @apply w-[325px];
+    @apply h-[60px];
   }
 }
 
 .sponsor-emerald {
-  @apply max-w-[275px];
+  @apply max-w-[300px];
+  & img {
+    @apply h-[120px];
+  }
 }
 
 .sponsor-community {
   @apply max-w-[200px];
+  & img {
+    @apply h-[80px];
+  }
 }
 
 .sponsor-podcast {
-  @apply max-w-[100px];
+  @apply max-w-[75px];
   & img {
-    @apply max-h-[50px];
+    @apply max-w-[75px];
   }
 }
 
@@ -205,7 +237,19 @@ a {
 #sky {
   z-index: 3; /* slide under groups 1 and 3 */
   width: 100%;
-  /*transform: scale(1.2); !* Zoom in *!*/
+  background: #998aff;
+  background: linear-gradient(
+    180deg,
+    rgba(153, 138, 255, 1) 0%,
+    rgba(255, 235, 229, 1) 95%
+  );
+}
+
+#sky .front-mountains {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin-bottom: -3px;
 }
 
 #sky .parallax__layer--back {
@@ -213,9 +257,9 @@ a {
   height: 80vh;
   background: #998aff;
   background: linear-gradient(
-          180deg,
-          rgba(153, 138, 255, 1) 0%,
-          rgba(255, 235, 229, 1) 95%
+    180deg,
+    rgba(153, 138, 255, 1) 0%,
+    rgba(255, 235, 229, 1) 95%
   );
 }
 
@@ -227,82 +271,312 @@ a {
   z-index: 100;
 }
 
-#mountain {
+.mountain-text-section {
   position: relative;
-  z-index: 5;
-  height: 160vh;
-  transform-origin: center bottom;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  overflow: visible;
+  z-index: 5;
+  padding: 80px 20px 400px;
+  background: #251682;
+  background: linear-gradient(
+    180deg,
+    #251682 0%,
+    #1D1266 95%
+  );
+  @media screen and (min-width: 1024px) {
+    padding: 100px 120px 400px;
+  }
 }
 
-#mountain .parallax__layer--back {
-  position: relative;
-  margin-top: calc(-15vh - 10vw);
-  margin-left: -1px;
-  height: 160vh;
+.mountain-text-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../src/assets/images/hero/front-mountains.svg");
   background-size: cover;
-  background-image: url('../../src/assets/images/hero/back-mountains.svg');
 }
 
-#mountain .parallax__layer--base {
+.mountain-text-content {
   position: relative;
-  height: 120vh;
-  top: -120vh;
-  background-size: cover;
-  background-image: url('../../src/assets/images/hero/front-mountains.svg');
-}
-
-#mountain .parallax__layer--fore {
-  position: relative;
-  top: 10vh;
-  left: 0;
-  z-index: 1000;
+  width: 100%;
+  max-width: 870px;
+  top: 10%;
+  text-align: center;
 }
 
 #trees {
   position: relative;
   z-index: 5;
-  height: 100vh;
-  transform-origin: center bottom;
   width: 100%;
-  overflow: visible;
 }
 
 #trees .parallax__layer--back {
   position: relative;
-  margin-top: -380px;
-  height: 100vh;
+  margin-top: -500px;
+  height: 600px;
   background-size: cover;
-  background-image: url('../../src/assets/images/hero/trees-light.svg');
+  background-image: url("../../src/assets/images/hero/trees-light.svg");
 }
 
 #trees .parallax__layer--base {
   position: relative;
-  height: 100vh;
+  height: 600px;
   margin-top: -120px;
   background-size: cover;
-  background-image: url('../../src/assets/images/hero/trees-dark.svg');
+  background-image: url("../../src/assets/images/hero/trees-dark.svg");
 }
 
 #trees .parallax__layer--fore {
   position: relative;
   top: 10vh;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
 }
 
-.mountain-text-box {
+.why-rmr {
+  position: relative;
+  z-index: 80;
+  color: #fff;
+  padding-top: 260px;
+  background-color: #003933;
+  margin-top: -520px;
+  @media screen and (min-width: 640px) {
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: -200px;
+    padding-top: 0px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.why-rmr-content {
   position: absolute;
-  top: 80vh; /* Adjust as needed to place over mountains */
+  top: 40px;
+  left: 16%;
+  max-width: 245px;
+  @media screen and (min-width: 1024px) {
+    top: 80px;
+  }
+}
+
+.why-rmr-content h1 {
+  line-height: 1.1;
+}
+
+.features-grid, .faq-grid {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1024px) {
+    padding: 200px 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.faq-grid {
+  padding: 40px 0 0;
+}
+
+.features-grid .feature-card {
+  background-color: #001C19;
+  padding: 54px;
+  color: #fff;
+}
+
+.faq-grid .faq {
+  background-color: #fff;
+  padding: 54px;
+  color: #000;
+}
+
+.features-grid h3, .faq-grid h3 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-bottom: 10px;
+}
+
+.features-grid p, .faq-grid p {
+  font-size: 0.875rem;
+  line-height: 2;
+  max-width: 300px;
+}
+
+.features-grid p, .faq-grid p {
   max-width: 100%;
+}
+
+.features {
+  background-color: white;
+}
+
+.speakers {
+  padding: 20px 0;
+  color: #fff;
+  background: #00221d;
+  background: linear-gradient(
+    180deg,
+    #00362f 0%,
+    #00221d 95%
+  );
+}
+
+.speakers header {
+  margin-bottom: 40px;
+  /*max-width: 460px;*/
+}
+
+.speakers header h1 span {
+  display: block;
+  font-size: 1.3rem;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.speakers header h3 {
+  font-weight: 400;
+  line-height: 1.25;
+  font-size: 1.4rem;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.speakers-grid .speaker h4 {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.speakers-grid .speaker p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.speakers-grid .speaker img {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.speaker-footer {
+  background: #fdece8;
+  background: linear-gradient(
+    180deg,
+    #fdece8 0%,
+    #f9eeef 95%
+  );
+}
+
+#location {
+  background: #fdece8;
+  background: linear-gradient(
+    180deg,
+    #f9eeef 0%,
+    #fff 95%
+  );
+}
+
+#faq {
+  position: relative;
+  background-color: white;
+}
+
+#faq .bottom-trees {
+  position: absolute;
   left: 0;
-  transform: none;
-  margin: 0 1rem;
-  border-radius: 16px;
-  padding: 2rem;
-  z-index: 20;
-  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.faq-content {
+  padding-bottom: 100px;
+  background: #00443d;
+  background: linear-gradient(
+    180deg,
+    #00443d 0%,
+    #001C19 95%
+  );
+  @media screen and (min-width: 640px) {
+    padding-bottom: 160px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 280px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 400px;
+  }
+}
+
+.faq-content header {
+  color: #fff;
+}
+
+.sponsors-sky {
+  position: relative;
+  min-height: 400px;
+  background: #478c81;
+  background: linear-gradient(
+    180deg,
+    #478c81 0%,
+    #d4d5cd 95%
+  );
+  @media screen and (min-width: 1024px) {
+    min-height: 1100px;
+  }
+}
+
+#sponsors {
+  position: relative;
+  padding-bottom: 100px;
+  background: #211473;
+  background: linear-gradient(
+    180deg,
+    #211473 0%,
+    #1e1466 95%
+  );
+  z-index: 5;
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 300px;
+  }
+}
+
+.sponsors-sky .mountain {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+#sponsors .secondary-sponsors {
+  flex-basis: calc(50% - 10px);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#sponsors::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../src/assets/images/sponsors/speckles-bottom.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 
 footer {
@@ -319,21 +593,10 @@ footer .container {
   padding-right: 1rem;
 }
 
-@media (min-width: 540px) {
-  #sky {
-    height: 700px;
-  }
-
-  #sky .text-block {
-    padding-top: 160px;
-  }
+@media (min-width: 640px) {
 
   #cloud2 {
     /*margin-right: -15vw; !* was -150px, reduced to prevent overflow *!*/
-  }
-
-  .mountain-text-box {
-    top: 90vh;
   }
 
   #mountain {
@@ -356,13 +619,13 @@ footer .container {
   }
 
   #trees .parallax__layer--back {
-    margin-top: -500px;
-    height: 100vh;
+    margin-top: -460px;
+    height: 800px;
   }
 
   #trees .parallax__layer--base {
-    height: 100vh;
-    margin-top: -60px;
+    height: 800px;
+    margin-top: -160px;
   }
 }
 
@@ -382,10 +645,6 @@ footer .container {
     left: 25vw; /* Adjusted to prevent overflow */
   }
 
-  .mountain-text-box {
-    top: 70vh;
-  }
-
   #mountain {
     margin-top: -400px;
   }
@@ -399,13 +658,13 @@ footer .container {
   }
 
   #trees .parallax__layer--back {
-    margin-top: -1000px;
+    margin-top: -600px;
     height: 100vh;
   }
 
   #trees .parallax__layer--base {
     height: 80vh;
-    margin-top: -280px;
+    margin-top: -400px;
   }
 }
 
