@@ -398,6 +398,32 @@ a {
   color: #000;
 }
 
+.faq-grid dt {
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.faq-grid dd {
+  font-size: 0.875rem;
+  line-height: 2;
+  margin: 0;
+}
+
+.features-grid dt {
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.features-grid dd {
+  font-size: 0.875rem;
+  line-height: 2;
+  margin: 0;
+}
+
 .features-grid h3, .faq-grid h3 {
   font-family: "Bricolage Grotesque", sans-serif;
   margin-bottom: 10px;

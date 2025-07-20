@@ -1,22 +1,22 @@
-<img src="/assets/images/faqs/header-trees.svg" class="w-full faq-header-trees" />
+<img src="/assets/images/faqs/header-trees.svg" class="w-full faq-header-trees" alt="" />
 <section id="faq" class="faq-content pt-24" style="position: relative;">
     <div class="container">
         <header class="text-center">
             <h1>FAQs</h1>
             <h3>Questions? Answered.</h3>
         </header>
-        <div class="faq-grid">
+        <dl class="faq-grid">
           <% site.data.faq.each do |faq| %>
             <div class="faq">
-                <h3><%= faq.q %></h3>
-                <p><%= faq.a %></p>
+                <dt><%= faq.q %></dt>
+                <dd><%= faq.a %></dd>
             </div>
           <% end %>
           <div class="faq">
-              <h3>Are you looking for sponsors?</h3>
-              <p>Yes! Visit our <a href="/sponsorship" class="text-primary hover:text-dark">Sponsorship Page</a></p>
+              <dt>Are you looking for sponsors?</dt>
+              <dd>Yes! Visit our <a href="/sponsorship" class="text-primary hover:text-dark">Sponsorship Page</a></dd>
           </div>
-        </div>
+        </dl>
     </div>
-    <img src="/assets/images/faqs/footer-trees.svg" class="bottom-trees" />
+    <img src="/assets/images/faqs/footer-trees.svg" class="bottom-trees" alt="" />
 </section>
