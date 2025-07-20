@@ -1,24 +1,22 @@
-<div class="bg-white">
-    <img src="/assets/images/faqs/header-trees.svg" class="w-full" />
-    <div id="faq" class="faq-content pt-24">
-        <div class="container">
-            <header class="text-center">
-                <h1>FAQs</h1>
-                <h3>Questions? Answered.</h3>
-            </header>
-            <div class="faq-grid">
-              <% site.data.faq.each do |faq| %>
-                <div class="faq">
-                    <h3><%= faq.q %></h3>
-                    <p><%= faq.a %></p>
-                </div>
-              <% end %>
-              <div class="faq">
-                  <h3>Are you looking for sponsors?</h3>
-                  <p>Yes! Visit our <a href="/sponsorship" class="text-primary hover:text-dark">Sponsorship Page</a></p>
-              </div>
+<img src="/assets/images/faqs/header-trees.svg" class="w-full faq-header-trees" />
+<section id="faq" class="faq-content pt-24" style="position: relative;">
+    <div class="container">
+        <header class="text-center">
+            <h1>FAQs</h1>
+            <h3>Questions? Answered.</h3>
+        </header>
+        <div class="faq-grid">
+          <% site.data.faq.each do |faq| %>
+            <div class="faq">
+                <h3><%= faq.q %></h3>
+                <p><%= faq.a %></p>
             </div>
+          <% end %>
+          <div class="faq">
+              <h3>Are you looking for sponsors?</h3>
+              <p>Yes! Visit our <a href="/sponsorship" class="text-primary hover:text-dark">Sponsorship Page</a></p>
+          </div>
         </div>
     </div>
     <img src="/assets/images/faqs/footer-trees.svg" class="bottom-trees" />
-</div>
+</section>

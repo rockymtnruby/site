@@ -15,7 +15,7 @@
 </head>
 <body style="height: 100%" class="bg-[#c6b5f4]">
 <%= render Shared::Navbar.new(site: site, metadata: site.metadata, resource: resource) %>
-<main class="max-w-[1536px] m-auto overflow-hidden">
+<main class="overflow-hidden">
   <%= yield %>
 </main>
 <%= render 'footer', metadata: site.metadata %>

@@ -491,12 +491,18 @@ a {
   background-color: white;
 }
 
-#faq .bottom-trees {
+.faq-header-trees {
+  background-color: white;
+}
+
+.bottom-trees {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: auto;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .faq-content {
@@ -663,7 +669,7 @@ footer .container {
   }
 
   #trees .parallax__layer--base {
-    height: 80vh;
+    height: max(100vh, 800px);
     margin-top: -400px;
   }
 }
