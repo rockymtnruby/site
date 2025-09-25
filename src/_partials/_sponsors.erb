@@ -29,19 +29,20 @@
                             </div>
                             <div class="ud-brands-logo flex flex-wrap items-center justify-center">
                                 <% sponsors.each do |sponsor| %>
-                                    <div class="ud-single-logo mx-10 mb-5 sponsor-<%= level.name -%>">
-                                        <a
-                                            href="<%= sponsor.url %>"
-                                            target="_blank"
-                                            rel="nofollow noopner"
-                                            title="<%= sponsor.name %>"
-                                        >
-                                            <img
-                                                src="/images/sponsors/<%= sponsor.logo %>"
-                                                alt="<%= sponsor.name %>"
-                                            />
-                                        </a>
-                                    </div>
+                                  <% bottom_margin = sponsor.name == 'Caribou' ? 'mb-10' : 'mb-5' %>
+                                  <div class="ud-single-logo mx-10 <%= bottom_margin %> sponsor-<%= level.name -%>">
+                                      <a
+                                          href="<%= sponsor.url %>"
+                                          target="_blank"
+                                          rel="nofollow noopner"
+                                          title="<%= sponsor.name %>"
+                                      >
+                                          <img
+                                              src="/images/sponsors/<%= sponsor.logo %>"
+                                              alt="<%= sponsor.name %>"
+                                          />
+                                      </a>
+                                  </div>
                                 <% end %>
                             </div>
                         </div>

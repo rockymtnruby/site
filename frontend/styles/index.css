@@ -156,9 +156,9 @@ a {
 }
 
 .sponsor-ruby {
-  @apply max-w-[400px];
+  @apply max-w-[300px];
   & img {
-    @apply w-[400px];
+    @apply w-[300px];
   }
 }
 

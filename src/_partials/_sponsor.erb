@@ -1,5 +1,5 @@
 <% width, max_width = case sponsor.level
-                      when 'ruby' then ['250px', '250px']
+                      when 'ruby' then ['120px', '120px']
                       when 'sapphire' then ['100px', '100px']
                       else ['80px', '80px']
                       end %>
@@ -9,7 +9,7 @@
         href="<%= sponsor.url %>"
         rel="nofollow noopner"
         target="_blank"
-        class="mb-6 mr-5 block"
+        class="mb-6 mr-8 block"
         style="max-width: <%= max_width %>; width: <%= width %>;"
     >
         <img
