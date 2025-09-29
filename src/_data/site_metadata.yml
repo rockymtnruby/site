@@ -44,7 +44,7 @@ main_page:
     - name: sponsors
       label: Sponsors
       enabled: true
-      navbar: false
+      navbar: true
     - name: tickets
       enabled: false
     - name: back_to_top
