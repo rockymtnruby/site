@@ -179,7 +179,7 @@ a {
 .sponsor-community {
   @apply max-w-[200px];
   & img {
-    @apply h-[80px];
+    @apply h-[40px];
   }
 }
 
@@ -279,11 +279,7 @@ a {
   z-index: 5;
   padding: 80px 20px 400px;
   background: #251682;
-  background: linear-gradient(
-    180deg,
-    #251682 0%,
-    #1D1266 95%
-  );
+  background: linear-gradient(180deg, #251682 0%, #1d1266 95%);
   @media screen and (min-width: 1024px) {
     padding: 100px 120px 400px;
   }
@@ -369,7 +365,8 @@ a {
   line-height: 1.1;
 }
 
-.features-grid, .faq-grid {
+.features-grid,
+.faq-grid {
   padding: 40px 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -387,7 +384,7 @@ a {
 }
 
 .features-grid .feature-card {
-  background-color: #001C19;
+  background-color: #001c19;
   padding: 54px;
   color: #fff;
 }
@@ -424,18 +421,21 @@ a {
   margin: 0;
 }
 
-.features-grid h3, .faq-grid h3 {
+.features-grid h3,
+.faq-grid h3 {
   font-family: "Bricolage Grotesque", sans-serif;
   margin-bottom: 10px;
 }
 
-.features-grid p, .faq-grid p {
+.features-grid p,
+.faq-grid p {
   font-size: 0.875rem;
   line-height: 2;
   max-width: 300px;
 }
 
-.features-grid p, .faq-grid p {
+.features-grid p,
+.faq-grid p {
   max-width: 100%;
 }
 
@@ -447,11 +447,7 @@ a {
   padding: 20px 0;
   color: #fff;
   background: #00221d;
-  background: linear-gradient(
-    180deg,
-    #00362f 0%,
-    #00221d 95%
-  );
+  background: linear-gradient(180deg, #00362f 0%, #00221d 95%);
 }
 
 .speakers header {
@@ -496,20 +492,12 @@ a {
 
 .speaker-footer {
   background: #fdece8;
-  background: linear-gradient(
-    180deg,
-    #fdece8 0%,
-    #f9eeef 95%
-  );
+  background: linear-gradient(180deg, #fdece8 0%, #f9eeef 95%);
 }
 
 #location {
   background: #fdece8;
-  background: linear-gradient(
-    180deg,
-    #f9eeef 0%,
-    #fff 95%
-  );
+  background: linear-gradient(180deg, #f9eeef 0%, #fff 95%);
 }
 
 #faq {
@@ -534,11 +522,7 @@ a {
 .faq-content {
   padding-bottom: 100px;
   background: #00443d;
-  background: linear-gradient(
-    180deg,
-    #00443d 0%,
-    #001C19 95%
-  );
+  background: linear-gradient(180deg, #00443d 0%, #001c19 95%);
   @media screen and (min-width: 640px) {
     padding-bottom: 160px;
   }
@@ -558,11 +542,7 @@ a {
   position: relative;
   min-height: 400px;
   background: #478c81;
-  background: linear-gradient(
-    180deg,
-    #478c81 0%,
-    #d4d5cd 95%
-  );
+  background: linear-gradient(180deg, #478c81 0%, #d4d5cd 95%);
   @media screen and (min-width: 1024px) {
     min-height: 1100px;
   }
@@ -572,11 +552,7 @@ a {
   position: relative;
   padding-bottom: 100px;
   background: #211473;
-  background: linear-gradient(
-    180deg,
-    #211473 0%,
-    #1e1466 95%
-  );
+  background: linear-gradient(180deg, #211473 0%, #1e1466 95%);
   z-index: 5;
   @media screen and (min-width: 1024px) {
     padding-bottom: 300px;
@@ -626,7 +602,6 @@ footer .container {
 }
 
 @media (min-width: 640px) {
-
   #cloud2 {
     /*margin-right: -15vw; !* was -150px, reduced to prevent overflow *!*/
   }

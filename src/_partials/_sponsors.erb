@@ -22,7 +22,7 @@
             <% site.data.sponsor_levels.each do |level| %>
                 <% sponsors = all_sponsors.select {|sponsor| sponsor.level == level.name } %>
                 <% unless sponsors.empty? %>
-                    <div class="bg-white items-center <%= %w[ruby emerald sapphire].include?(level.name) ? "w-full" : "secondary-sponsors" %>">
+                    <div class="bg-white items-center <%= %w[ruby emerald sapphire community].include?(level.name) ? "w-full" : "secondary-sponsors" %>">
                         <div class="wow fadeInUp" data-wow-delay=".2s">
                             <div class="ud-title my-4">
                                 <h3 class="text-center font-bold mb-8"><%= level.title %> Sponsors</h3>
@@ -37,7 +37,7 @@
                                           rel="nofollow noopner"
                                           title="<%= sponsor.name %>"
                                       >
-                                          <img
+                                          <img style="background-color: <%= sponsor.background ? sponsor.background : "" %>"
                                               src="/images/sponsors/<%= sponsor.logo %>"
                                               alt="<%= sponsor.name %>"
                                           />

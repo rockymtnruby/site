@@ -51,18 +51,44 @@
   level: community
   url: https://www.beflagrant.com/
   enabled: true
-- name: Remote Ruby
-  logo: remote-ruby.jpeg
-  level: podcast
-  url: https://www.remoteruby.com
-  enabled: false
+- name: AvoHQ
+  logo: AvoHQ-logo-colored.png
+  level: community
+  url: https://avohq.io/
+  enabled: true
+- name: Recurly
+  logo: Recurly_Brandmark_Yellow.png
+  level: community
+  url: https://recurly.com/
+  enabled: true
 - name: The Bike Shed
   logo: the-bike-shed.png
   level: podcast
   url: https://www.bikeshed.fm/
-  enabled: false
-- name: IndieRails
-  logo: indie-rails.png
+  enabled: true
+- name: Code and the Coding Coders who Code it
+  logo: code-and-the-coding-coders-who-code-it.png
   level: podcast
-  url: https://www.indierails.com/
-  enabled: false
+  url: https://podcast.drbragg.dev/
+  enabled: true
+- name: Remote Ruby
+  logo: remote-ruby.jpeg
+  level: podcast
+  url: https://www.remoteruby.com
+  enabled: true
+- name: The Ruby Gems Podcast
+  logo: Ruby-Gems-Podcast.jpeg
+  level: podcast
+  url: https://www.buzzsprout.com/2509083
+  enabled: true
+- name: BetaCraft Technologies
+  logo: BetaCraft-Technologies.png
+  level: travel
+  url: https://betacraft.com/
+  enabled: true
+- name: SOFware
+  logo: SOFware.png
+  level: travel
+  url: https://sofwarellc.com/
+  background: lightgrey
+  enabled: true
