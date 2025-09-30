@@ -86,6 +86,11 @@
   level: travel
   url: https://betacraft.com/
   enabled: true
+- name: Podia
+  logo: podia-transparent.svg
+  level: travel
+  url: https://podia.com
+  enabled: true
 - name: Spinel Cooperative
   logo: Spinel-Cooperative.svg
   level: travel
