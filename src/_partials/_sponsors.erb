@@ -9,16 +9,29 @@
 <section id="sponsors">
     <div class="container">
         <header class="max-w-[600px] text-white">
+            <% all_sponsors = site.data.sponsors.select {|sponsor| sponsor.enabled } %>
             <h1>Sponsors</h1>
             <h3 class="leading-tight">
                 Rocky Mountain Ruby wouldn't be possible without the support of our generous sponsors.
             </h3>
-            <p class="text-sm font-light mt-[10px]">
-                Interested in supporting Rocky Mountain Ruby? Find out about <a href="/sponsorship" class="font-bold hover:text-primary" target="_blank">sponsorship</a>.
-            </p>
+            <% unless all_sponsors.empty? %>
+                <p class="text-sm font-light mt-[10px]">
+                    Interested in supporting Rocky Mountain Ruby? Find out about <a href="/sponsorship" class="font-bold hover:text-primary" target="_blank">sponsorship</a>.
+                </p>
+            <% end %>
         </header>
         <div class="flex flex-wrap relative z-20 gap-[20px] py-[40px]">
-            <% all_sponsors = site.data.sponsors.select {|sponsor| sponsor.enabled } %>
+            <% if all_sponsors.empty? %>
+                <div class="bg-white items-center w-full">
+                    <div class="wow fadeInUp" data-wow-delay=".2s">
+                        <div class="ud-title my-8 px-8 text-center">
+                            <h3 class="font-bold mb-4">Sponsorships for 2026 are now open.</h3>
+                            <p class="text-body-color mb-6">Join the companies that make Rocky Mountain Ruby possible. Packages available for all sizes.</p>
+                            <a href="/sponsorship" class="inline-flex items-center justify-center rounded bg-primary py-3 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg">View Sponsorship Options</a>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
             <% site.data.sponsor_levels.each do |level| %>
                 <% sponsors = all_sponsors.select {|sponsor| sponsor.level == level.name } %>
                 <% unless sponsors.empty? %>
@@ -34,7 +47,7 @@
                                       <a
                                           href="<%= sponsor.url %>"
                                           target="_blank"
-                                          rel="nofollow noopner"
+                                          rel="nofollow noopener"
                                           title="<%= sponsor.name %>"
                                       >
                                           <img style="background-color: <%= sponsor.background ? sponsor.background : "transparent" %>"

@@ -3,28 +3,28 @@
   footer_logo: Cisco_White.svg
   level: ruby
   url: https://meraki.cisco.com/
-  enabled: true
+  enabled: false
   footer: true
 - name: Gusto
   logo: Gusto_logo_color.svg
   footer_logo: Gusto_logo_white.svg
   level: sapphire
   url: https://gusto.com
-  enabled: true
+  enabled: false
   footer: true
 - name: Caribou
   logo: Caribou_Color.svg
   footer_logo: Caribou_White.svg
   level: sapphire
   url: https://caribou.com/
-  enabled: true
+  enabled: false
   footer: true
 - name: TypeSense
   logo: typesense_logo.svg
   footer_logo: typesense_white.svg
   level: emerald
   url: https://typesense.org
-  enabled: true
+  enabled: false
   footer: true
 - name: Simiarum Infinitarum
   logo: si-logo.jpg
@@ -36,7 +36,7 @@
   footer_logo: Checkr_White.svg
   level: emerald
   url: https://checkr.com
-  enabled: true
+  enabled: false
   footer: true
 - name: DNSimple
   logo: dnsimple-logo-blue.png
@@ -50,55 +50,55 @@
   footer_logo: FlagrantLogo_White.svg
   level: community
   url: https://www.beflagrant.com/
-  enabled: true
+  enabled: false
 - name: AvoHQ
   logo: AvoHQ-logo-colored.png
   level: community
   url: https://avohq.io/
-  enabled: true
+  enabled: false
 - name: Recurly
   logo: Recurly_Brandmark_Yellow.png
   level: community
   url: https://recurly.com/
-  enabled: true
+  enabled: false
 - name: The Bike Shed
   logo: the-bike-shed.png
   level: podcast
   url: https://www.bikeshed.fm/
-  enabled: true
+  enabled: false
 - name: Code and the Coding Coders who Code it
   logo: code-and-the-coding-coders-who-code-it.png
   level: podcast
   url: https://podcast.drbragg.dev/
-  enabled: true
+  enabled: false
 - name: Remote Ruby
   logo: remote-ruby.jpeg
   level: podcast
   url: https://www.remoteruby.com
-  enabled: true
+  enabled: false
 - name: The Ruby Gems Podcast
   logo: Ruby-Gems-Podcast.jpeg
   level: podcast
   url: https://www.buzzsprout.com/2509083
-  enabled: true
+  enabled: false
 - name: BetaCraft Technologies
   logo: BetaCraft-Technologies.png
   level: travel
   url: https://betacraft.com/
-  enabled: true
+  enabled: false
 - name: Podia
   logo: podia-transparent.svg
   level: travel
   url: https://podia.com
-  enabled: true
+  enabled: false
 - name: Spinel Cooperative
   logo: Spinel-Cooperative.svg
   level: travel
   url: https://spinel.coop/
-  enabled: true
+  enabled: false
 - name: SOFware
   logo: SOFware.png
   level: travel
   url: https://sofwarellc.com/
   background: lightgrey
-  enabled: true
+  enabled: false

@@ -4,8 +4,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Rocky Mountain Ruby 2025
-tagline: October 6 and 7
+title: Rocky Mountain Ruby 2026
+tagline: September 28 and 29
 email: mailto:info@rockymtnruby.dev
 twitter:
   username: rmrubyconf
@@ -23,6 +23,8 @@ main_page:
       enabled: true
       navbar: true
       slug: home
+    - name: keynote_speakers
+      enabled: false
     - name: features
       enabled: false
     - name: program
