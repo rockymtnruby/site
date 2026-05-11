@@ -16,6 +16,7 @@ description: >-
   and outdoor experiences, in beautiful Boulder, Colorado at one of the best
   times of year.
 registration_open: false
+cfp_open: false
 main_page:
   sections:
     - name: hero

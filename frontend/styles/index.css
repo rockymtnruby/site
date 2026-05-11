@@ -312,6 +312,77 @@ a.hero-cta-card--link:focus-visible {
   font-weight: 400;
 }
 
+.hero-cfp-banner {
+  border-radius: 8px;
+  padding: 16px 20px;
+  text-align: center;
+  min-width: 320px;
+  max-width: min(560px, 90vw);
+  @media (min-width: 640px) { padding: 20px 28px; }
+}
+
+@keyframes cfp-pulse {
+  0%   { box-shadow: 0 0 0 0   rgba(153, 138, 255, 0.55); }
+  70%  { box-shadow: 0 0 0 16px rgba(153, 138, 255, 0); }
+  100% { box-shadow: 0 0 0 0   rgba(153, 138, 255, 0); }
+}
+
+.hero-cfp-banner--passive {
+  border: 1px dashed rgba(153, 138, 255, 0.5);
+  background: #1d1266;
+  color: white;
+  opacity: 0.8;
+}
+
+a.hero-cfp-banner--active {
+  display: block;
+  background: #1d1266;
+  color: white;
+  border: 1px solid rgba(153, 138, 255, 0.5);
+  text-decoration: none;
+  animation: cfp-pulse 2.4s ease-out infinite;
+  transition: background 0.2s ease;
+}
+
+a.hero-cfp-banner--active:hover {
+  background: #251682;
+  animation: none;
+  box-shadow: 0 6px 28px rgba(0, 0, 20, 0.35);
+}
+
+a.hero-cfp-banner--active:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
+}
+
+.hero-cfp-banner__eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: 4px;
+}
+
+.hero-cfp-banner__dates {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.2;
+  @media (min-width: 640px) { font-size: 1.625rem; }
+  @media (min-width: 1024px) { font-size: 1.875rem; }
+}
+
+.hero-cfp-banner--passive .hero-cfp-banner__dates {
+  opacity: 0.85;
+}
+
+.hero-cfp-banner__cta {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-top: 6px;
+  color: #998aff;
+}
+
 .hero-date {
   display: block;
   font-weight: 500;

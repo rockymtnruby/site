@@ -11,17 +11,29 @@
     <p class="mt-3 text-center text-white">
       Catch up on last year: <a href="https://2025.rockymtnruby.dev/" target="_blank" class="underline">2025 program</a> and <a href="https://www.youtube.com/watch?v=eK0YK5y4fOo&list=PLE7tQUdRKcyZWRurElt80vkH4wuisnUBq" target="_blank" class="underline">videos</a>.
     </p>
-    <div class="mt-4 pb-4 flex flex-col sm:flex-row gap-3 justify-center">
-      <div class="hero-cta-card hero-cta-card--passive" aria-label="CFP status: coming soon">
-        <p class="font-semibold">CFP Coming Soon</p>
+    <div class="mt-6 pb-4 flex flex-col items-center gap-4">
+      <% if site.metadata.cfp_open %>
+        <a href="#cfp" class="hero-cfp-banner hero-cfp-banner--active" aria-label="Call for Papers: May 15 to June 30, 2026. Submit a proposal.">
+          <p class="hero-cfp-banner__eyebrow">Call for Papers</p>
+          <p class="hero-cfp-banner__dates">May 15 &ndash; June 30, 2026</p>
+          <p class="hero-cfp-banner__cta">Submit a Proposal &rarr;</p>
+        </a>
+      <% else %>
+        <div class="hero-cfp-banner hero-cfp-banner--passive" aria-label="Call for Papers opens May 15, 2026">
+          <p class="hero-cfp-banner__eyebrow">Call for Papers</p>
+          <p class="hero-cfp-banner__dates">Opens May 15, 2026</p>
+        </div>
+      <% end %>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <div class="hero-cta-card hero-cta-card--passive" aria-label="Tickets status: coming soon">
+          <p class="font-semibold">Tickets Coming Soon</p>
+        </div>
+        <a href="/sponsorship" class="hero-cta-card hero-cta-card--link">
+          <p class="font-semibold">Sponsor Us</p>
+          <p class="text-sm hero-cta-sub">Help make it happen &rarr;</p>
+        </a>
       </div>
-      <div class="hero-cta-card hero-cta-card--passive" aria-label="Tickets status: coming soon">
-        <p class="font-semibold">Tickets Coming Soon</p>
-      </div>
-      <a href="/sponsorship" class="hero-cta-card hero-cta-card--link">
-        <p class="font-semibold">Sponsor Us</p>
-        <p class="text-sm hero-cta-sub">Help make it happen &rarr;</p>
-      </a>
     </div>
   </div>
   <img src="/assets/images/hero/mountains.svg" alt="" class="front-mountains" />
