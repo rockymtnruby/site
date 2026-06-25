@@ -1,0 +1,115 @@
+---
+layout: page
+title: Sponsorship
+top_level: true
+enabled: true
+footer_only: true
+---
+
+<% tiers = site.data.sponsorship_tiers.tiers %>
+<% features = site.data.sponsorship_tiers.features %>
+
+<div class="text-body-color mb-20">
+  <p class="mb-6 text-base leading-relaxed">
+    Help make Rocky Mountain Ruby a better conference by becoming a sponsor.
+    This is a great opportunity to meet Ruby developers in the Colorado area. We
+    are expecting 100–150 attendees.
+  </p>
+  <p class="mb-8 text-base leading-relaxed">
+    Whether you're looking to hire or want some exposure to our mostly developer
+    audience, becoming a sponsor is the best way to do that.
+  </p>
+
+  <h4 class="mb-5 text-2xl font-bold text-dark">Sponsorship Levels</h4>
+
+  <%# ── Mobile: stacked per-tier cards, hidden at md+ ── %>
+  <div class="md:hidden space-y-5 mb-8">
+    <% tiers.each do |tier| %>
+      <div class="rounded-lg shadow-md overflow-hidden border-t-4" style="border-top-color: <%= tier.color %>">
+        <div class="px-5 pt-4 pb-3 bg-white">
+          <% if tier.featured %>
+            <span class="inline-block text-xs font-bold uppercase tracking-widest text-white rounded px-2 py-0.5 mb-2" style="background-color: <%= tier.color %>">Practically Family</span>
+          <% end %>
+          <h3 class="text-2xl font-bold" style="color: <%= tier.color %>"><%= tier.name %></h3>
+          <p class="text-3xl font-semibold text-dark mt-0.5"><%= tier.price %></p>
+        </div>
+        <ul class="bg-white border-t border-gray-100 px-5 pt-3 pb-5 space-y-2">
+          <% features.each do |feature| %>
+            <% val = feature[tier.slug] %>
+            <% next if val == false || val.nil? %>
+            <li class="flex items-start gap-2 text-sm text-body-color">
+              <svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 20 20" fill="currentColor" style="color: <%= tier.color %>">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <% if val == true %>
+                <span><%= feature.label %></span>
+              <% else %>
+                <span><%= feature.label %>: <strong class="text-dark"><%= val %></strong></span>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  </div>
+
+  <%# ── Desktop: comparison table, hidden below md ── %>
+  <table class="hidden md:table w-full mb-8">
+    <thead>
+      <tr class="border-b-2 border-primary">
+        <th class="py-2 w-2/5"></th>
+        <% tiers.each do |tier| %>
+          <th class="text-center py-3 font-bold text-xl w-1/5 <%= tier.featured ? 'bg-[#fef4f4]' : '' %>" style="color: <%= tier.color %>">
+            <% if tier.featured %>
+              <span class="block text-xs font-bold uppercase tracking-widest text-white rounded px-2 py-0.5 mb-1.5 mx-auto w-max" style="background-color: <%= tier.color %>">Practically Family</span>
+            <% end %>
+            <%= tier.name %>
+          </th>
+        <% end %>
+      </tr>
+      <tr class="border-b-4 border-primary">
+        <th class="text-right py-2 pr-4 font-normal text-sm text-body-color">Price</th>
+        <% tiers.each do |tier| %>
+          <td class="text-center py-2 font-bold text-xl w-1/5 <%= tier.featured ? 'bg-[#fef4f4]' : '' %>" style="color: <%= tier.color %>"><%= tier.price %></td>
+        <% end %>
+      </tr>
+    </thead>
+    <tbody>
+      <% features.each do |feature| %>
+        <tr class="border-b border-primary even:bg-white">
+          <th class="text-right py-2 pr-4 font-normal text-sm text-body-color w-2/5"><%= feature.label %></th>
+          <% tiers.each do |tier| %>
+            <% val = feature[tier.slug] %>
+            <td class="text-center py-2 w-1/5 <%= tier.featured ? 'bg-[#fef4f4]' : '' %>">
+              <% if val == true %>
+                <svg class="w-5 h-5 mx-auto" viewBox="0 0 20 20" fill="currentColor" style="color: <%= tier.color %>">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              <% elsif val == false || val.nil? %>
+                <span class="text-gray-300 select-none">—</span>
+              <% else %>
+                <span class="text-sm text-dark"><%= val %></span>
+              <% end %>
+            </td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <h4 class="mt-6 mb-3 text-2xl font-bold text-dark">Other Opportunities</h4>
+
+  <p class="mb-8 text-base leading-relaxed">
+    Looking for other sponsorship options? We are open to unique and creative
+    ideas (e.g. opening the bar at eTown, game night, after party, giveaways).
+    Let's talk!
+  </p>
+  <p class="mb-8 text-base leading-relaxed text-center">
+    <a
+      href="mailto:info@rockymtnruby.dev"
+      class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
+    >
+      Contact Us
+    </a>
+  </p>
+</div>

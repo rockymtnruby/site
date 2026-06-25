@@ -1,0 +1,60 @@
+tiers:
+  - slug: emerald
+    name: Emerald
+    color: "#0C6640"
+    price: "$2,000"
+  - slug: sapphire
+    name: Sapphire
+    color: "#2672B5"
+    price: "$4,000"
+  - slug: ruby
+    name: Ruby
+    color: "#B20009"
+    price: "$8,000"
+    featured: true
+
+features:
+  - label: Recognition in conference opening and closing
+    emerald: true
+    sapphire: true
+    ruby: true
+  - label: Logo on site-wide footer
+    emerald: true
+    sapphire: true
+    ruby: true
+  - label: Position on Sponsor Page
+    emerald: "Bottom"
+    sapphire: "Middle"
+    ruby: "Top"
+  - label: Logo on all videos (if we reach funding goal)
+    emerald: true
+    sapphire: true
+    ruby: true
+  - label: LinkedIn promotion
+    emerald: true
+    sapphire: true
+    ruby: true
+  - label: Mastodon promotion (@rockymtnruby@ruby.social)
+    emerald: true
+    sapphire: true
+    ruby: true
+  - label: Complimentary conference tickets
+    emerald: "2"
+    sapphire: "4"
+    ruby: "8"
+  - label: Job ads on conference website
+    emerald: false
+    sapphire: "1"
+    ruby: "2"
+  - label: Sponsor space in the Café & Bar @ eTown Hall
+    emerald: false
+    sapphire: "Shared 6' table"
+    ruby: "6' table"
+  - label: Sponsored email to conference attendees
+    emerald: false
+    sapphire: false
+    ruby: true
+  - label: Sponsor description on home page
+    emerald: false
+    sapphire: false
+    ruby: true
