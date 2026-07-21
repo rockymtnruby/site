@@ -26,9 +26,16 @@
       <% end %>
 
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <div class="hero-cta-card hero-cta-card--passive" aria-label="Tickets status: coming soon">
-          <p class="font-semibold">Tickets Coming Soon</p>
-        </div>
+        <% if site.metadata.registration_open %>
+          <a href="/tickets" class="hero-cta-card hero-cta-card--link">
+            <p class="font-semibold">Get Tickets</p>
+            <p class="text-sm hero-cta-sub">On sale now &rarr;</p>
+          </a>
+        <% else %>
+          <div class="hero-cta-card hero-cta-card--passive" aria-label="Tickets status: coming soon">
+            <p class="font-semibold">Tickets Coming Soon</p>
+          </div>
+        <% end %>
         <a href="/sponsorship" class="hero-cta-card hero-cta-card--link">
           <p class="font-semibold">Sponsor Us</p>
           <p class="text-sm hero-cta-sub">Help make it happen &rarr;</p>
