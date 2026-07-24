@@ -38,6 +38,13 @@
   url: https://checkr.com
   enabled: false
   footer: true
+- name: AppSignal
+  logo: Appsignal-original-azure.png
+  footer_logo: Appsignal-original-white.png
+  level: emerald
+  url: https://www.appsignal.com/
+  enabled: true
+  footer: true
 - name: DNSimple
   logo: dnsimple-logo-blue.png
   footer_logo: dnsimple-logo-light.png

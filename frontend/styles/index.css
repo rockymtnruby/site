@@ -172,7 +172,7 @@ a {
 .sponsor-emerald {
   @apply max-w-[300px];
   & img {
-    @apply h-[120px];
+    @apply h-[120px] w-auto object-contain;
   }
 }
 
