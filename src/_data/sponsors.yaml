@@ -10,7 +10,7 @@
   footer_logo: Gusto_logo_white.svg
   level: sapphire
   url: https://gusto.com
-  enabled: false
+  enabled: true
   footer: true
 - name: Caribou
   logo: Caribou_Color.svg
