@@ -13,25 +13,28 @@
     </p>
     <div class="mt-6 pb-4 flex flex-col items-center gap-4">
       <% if site.metadata.cfp_open %>
-        <a href="#cfp" class="hero-cfp-banner hero-cfp-banner--active" aria-label="Call for Papers: May 15 to June 30, 2026. Submit a proposal.">
-          <p class="hero-cfp-banner__eyebrow">Call for Papers</p>
-          <p class="hero-cfp-banner__dates">May 15 &ndash; June 30, 2026</p>
-          <p class="hero-cfp-banner__cta">Submit a Proposal &rarr;</p>
+        <a href="#cfp" class="hero-banner hero-banner--active" aria-label="Call for Papers: May 15 to June 30, 2026. Submit a proposal.">
+          <p class="hero-banner__eyebrow">Call for Papers</p>
+          <p class="hero-banner__dates">May 15 &ndash; June 30, 2026</p>
+          <p class="hero-banner__cta">Submit a Proposal &rarr;</p>
         </a>
       <% elsif false %>
-        <div class="hero-cfp-banner hero-cfp-banner--passive" aria-label="Call for Papers opens May 15, 2026">
-          <p class="hero-cfp-banner__eyebrow">Call for Papers</p>
-          <p class="hero-cfp-banner__dates">Opens May 15, 2026</p>
+        <div class="hero-banner hero-banner--passive" aria-label="Call for Papers opens May 15, 2026">
+          <p class="hero-banner__eyebrow">Call for Papers</p>
+          <p class="hero-banner__dates">Opens May 15, 2026</p>
         </div>
       <% end %>
 
+      <% if site.metadata.registration_open %>
+        <a href="/tickets" class="hero-banner hero-banner--active hero-banner--tickets" aria-label="Tickets are on sale now. Get your tickets.">
+          <p class="hero-banner__eyebrow">Tickets</p>
+          <p class="hero-banner__dates">On Sale Now</p>
+          <p class="hero-banner__cta">Get Tickets &rarr;</p>
+        </a>
+      <% end %>
+
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <% if site.metadata.registration_open %>
-          <a href="/tickets" class="hero-cta-card hero-cta-card--link">
-            <p class="font-semibold">Get Tickets</p>
-            <p class="text-sm hero-cta-sub">On sale now &rarr;</p>
-          </a>
-        <% else %>
+        <% unless site.metadata.registration_open %>
           <div class="hero-cta-card hero-cta-card--passive" aria-label="Tickets status: coming soon">
             <p class="font-semibold">Tickets Coming Soon</p>
           </div>

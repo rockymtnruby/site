@@ -312,7 +312,7 @@ a.hero-cta-card--link:focus-visible {
   font-weight: 400;
 }
 
-.hero-cfp-banner {
+.hero-banner {
   border-radius: 8px;
   padding: 16px 20px;
   text-align: center;
@@ -327,14 +327,20 @@ a.hero-cta-card--link:focus-visible {
   100% { box-shadow: 0 0 0 0   rgba(153, 138, 255, 0); }
 }
 
-.hero-cfp-banner--passive {
+@keyframes tickets-pulse {
+  0%   { box-shadow: 0 0 0 0   rgba(155, 17, 30, 0.55); }
+  70%  { box-shadow: 0 0 0 16px rgba(155, 17, 30, 0); }
+  100% { box-shadow: 0 0 0 0   rgba(155, 17, 30, 0); }
+}
+
+.hero-banner--passive {
   border: 1px dashed rgba(153, 138, 255, 0.5);
   background: #1d1266;
   color: white;
   opacity: 0.8;
 }
 
-a.hero-cfp-banner--active {
+a.hero-banner--active {
   display: block;
   background: #1d1266;
   color: white;
@@ -344,18 +350,32 @@ a.hero-cfp-banner--active {
   transition: background 0.2s ease;
 }
 
-a.hero-cfp-banner--active:hover {
+a.hero-banner--active:hover {
   background: #251682;
   animation: none;
   box-shadow: 0 6px 28px rgba(0, 0, 20, 0.35);
 }
 
-a.hero-cfp-banner--active:focus-visible {
+a.hero-banner--active:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.9);
   outline-offset: 3px;
 }
 
-.hero-cfp-banner__eyebrow {
+a.hero-banner--tickets {
+  background: #7a0f1a;
+  border-color: rgba(155, 17, 30, 0.6);
+  animation: tickets-pulse 2.4s ease-out infinite;
+}
+
+a.hero-banner--tickets:hover {
+  background: #911423;
+}
+
+.hero-banner--tickets .hero-banner__cta {
+  color: #ff98a3;
+}
+
+.hero-banner__eyebrow {
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -364,7 +384,7 @@ a.hero-cfp-banner--active:focus-visible {
   margin-bottom: 4px;
 }
 
-.hero-cfp-banner__dates {
+.hero-banner__dates {
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.2;
@@ -372,11 +392,11 @@ a.hero-cfp-banner--active:focus-visible {
   @media (min-width: 1024px) { font-size: 1.875rem; }
 }
 
-.hero-cfp-banner--passive .hero-cfp-banner__dates {
+.hero-banner--passive .hero-banner__dates {
   opacity: 0.85;
 }
 
-.hero-cfp-banner__cta {
+.hero-banner__cta {
   font-size: 0.9375rem;
   font-weight: 500;
   margin-top: 6px;
