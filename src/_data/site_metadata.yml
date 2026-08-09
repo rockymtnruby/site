@@ -17,6 +17,7 @@ description: >-
   times of year.
 registration_open: true
 cfp_open: false
+sessionize_speaker_embed_id: xxmulsug
 main_page:
   sections:
     - name: hero
@@ -31,7 +32,7 @@ main_page:
     - name: program
       label: Speakers
       navbar: true
-      enabled: false
+      enabled: true
     - name: cfp
       label: CFP
       navbar: true
