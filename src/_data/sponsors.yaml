@@ -8,6 +8,7 @@
 - name: Gusto
   logo: Gusto_logo_color.svg
   footer_logo: Gusto_logo_white.svg
+  footer_width: 90px
   level: sapphire
   url: https://gusto.com
   enabled: true
