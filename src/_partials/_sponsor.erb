@@ -2,7 +2,10 @@
                       when 'ruby' then ['120px', '120px']
                       when 'sapphire' then ['100px', '100px']
                       else ['80px', '80px']
-                      end %>
+                      end
+   if sponsor.footer_width
+     width = max_width = sponsor.footer_width
+   end %>
 
 <li>
     <a

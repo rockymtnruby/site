@@ -108,7 +108,8 @@ a {
   @apply bg-dark;
 }
 
-.sticky #navbarCollapse li a {
+.sticky #navbarCollapse li a,
+.sticky #navbarCollapse li span {
   @apply text-dark hover:text-primary hover:opacity-100;
 }
 
@@ -440,6 +441,12 @@ a.hero-banner--tickets:hover {
   max-width: 870px;
   top: 10%;
   text-align: center;
+}
+
+@media (max-width: 639px) {
+  .mountain-text-section {
+    z-index: 15;
+  }
 }
 
 #trees {
