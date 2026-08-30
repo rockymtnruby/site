@@ -117,3 +117,8 @@
   url: https://sofwarellc.com/
   background: lightgrey
   enabled: false
+- name: Evil Martians
+  logo: Evil-Martians.png
+  level: travel
+  url: https://evilmartians.com/
+  enabled: true
