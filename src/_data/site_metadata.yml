@@ -18,6 +18,7 @@ description: >-
 registration_open: true
 cfp_open: false
 sessionize_speaker_embed_id: xxmulsug
+sessionize_schedule_embed_id: xxmulsug
 main_page:
   sections:
     - name: hero
