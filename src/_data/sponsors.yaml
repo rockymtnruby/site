@@ -20,13 +20,6 @@
   url: https://caribou.com/
   enabled: false
   footer: true
-- name: TypeSense
-  logo: typesense_logo.svg
-  footer_logo: typesense_white.svg
-  level: emerald
-  url: https://typesense.org
-  enabled: false
-  footer: true
 - name: Simiarum Infinitarum
   logo: si-logo.jpg
   level: ruby
@@ -63,9 +56,17 @@
 - name: Flagrant
   logo: FlagrantLogo_Color.svg
   footer_logo: FlagrantLogo_White.svg
-  level: community
+  level: emerald
   url: https://www.beflagrant.com/
-  enabled: false
+  enabled: true
+  footer: true
+- name: TypeSense
+  logo: typesense_logo.svg
+  footer_logo: typesense_white.svg
+  level: emerald
+  url: https://typesense.org
+  enabled: true
+  footer: true
 - name: AvoHQ
   logo: AvoHQ-logo-colored.png
   level: community
