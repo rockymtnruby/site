@@ -33,17 +33,13 @@
         </a>
       <% end %>
 
-      <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <% unless site.metadata.registration_open %>
-          <div class="hero-cta-card hero-cta-card--passive" aria-label="Tickets status: coming soon">
-            <p class="font-semibold">Tickets Coming Soon</p>
-          </div>
-        <% end %>
-        <a href="/sponsorship" class="hero-cta-card hero-cta-card--link">
-          <p class="font-semibold">Sponsor Us</p>
-          <p class="text-sm hero-cta-sub">Help make it happen &rarr;</p>
-        </a>
-      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSflDB-dzBLSNPHa_MSi_VsD7W8BKnOyRKJLq8fODuQD7UU5gA/viewform" target="_blank" class="underline text-dark">Need financial assistance? Apply for a scholarship &rarr;</a>
+
+      <% unless site.metadata.registration_open %>
+        <div class="hero-cta-card hero-cta-card--passive" aria-label="Tickets status: coming soon">
+          <p class="font-semibold">Tickets Coming Soon</p>
+        </div>
+      <% end %>
     </div>
   </div>
   <img src="/assets/images/hero/mountains.svg" alt="" class="front-mountains" />
