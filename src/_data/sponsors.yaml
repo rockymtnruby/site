@@ -102,6 +102,11 @@
   level: travel
   url: https://betacraft.com/
   enabled: false
+- name: BookBub
+  logo: BookBub.png
+  level: travel
+  url: https://www.bookbub.com
+  enabled: true
 - name: Podia
   logo: podia-transparent.svg
   level: travel
