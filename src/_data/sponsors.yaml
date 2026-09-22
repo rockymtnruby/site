@@ -106,7 +106,7 @@
   logo: podia-transparent.svg
   level: travel
   url: https://podia.com
-  enabled: false
+  enabled: true
 - name: Spinel Cooperative
   logo: Spinel-Cooperative.svg
   level: travel
@@ -117,7 +117,7 @@
   level: travel
   url: https://sofwarellc.com/
   background: lightgrey
-  enabled: false
+  enabled: true
 - name: Evil Martians
   logo: Evil-Martians.png
   level: travel
