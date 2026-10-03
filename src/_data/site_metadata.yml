@@ -15,7 +15,10 @@ description: >-
   programming language which features technical presentations, community events
   and outdoor experiences, in beautiful Boulder, Colorado at one of the best
   times of year.
-registration_open: true
+registration_open: false
+# Set true once the conference has happened: hides ticket/scholarship entry
+# points and shows the thank-you + videos-coming-soon state.
+event_over: true
 cfp_open: false
 sessionize_speaker_embed_id: xxmulsug
 sessionize_schedule_embed_id: xxmulsug

@@ -12,10 +12,12 @@
                 <dd><%= faq.a %></dd>
             </div>
           <% end %>
-          <div class="faq">
-              <dt>What if I need financial assistance?</dt>
-              <dd>Please fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSflDB-dzBLSNPHa_MSi_VsD7W8BKnOyRKJLq8fODuQD7UU5gA/viewform" class="text-primary hover:text-dark">Scholarship Application</a></dd>
-          </div>
+          <% unless site.metadata.event_over %>
+            <div class="faq">
+                <dt>What if I need financial assistance?</dt>
+                <dd>Please fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSflDB-dzBLSNPHa_MSi_VsD7W8BKnOyRKJLq8fODuQD7UU5gA/viewform" class="text-primary hover:text-dark">Scholarship Application</a></dd>
+            </div>
+          <% end %>
           <div class="faq">
               <dt>Are you looking for sponsors?</dt>
               <dd>Yes! Visit our <a href="/sponsorship" class="text-primary hover:text-dark">Sponsorship Page</a></dd>

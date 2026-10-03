@@ -2,7 +2,9 @@
 <html lang="en" class="scroll-smooth" style="height: 100%">
 <head>
   <%= render "head", metadata: site.metadata, title: data.title %>
-  <script src='https://js.tito.io/v2' async></script>
+  <% if site.metadata.registration_open %>
+    <script src='https://js.tito.io/v2' async></script>
+  <% end %>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
   <script type="text/javascript">
